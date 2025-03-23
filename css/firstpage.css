@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+section .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url(../assetes/cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 1;
+
+
+}
+
+section .container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 80px;
+    background-color: #fff;
+    opacity: 0.9;
+
+}
+
+section .container .left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section .container .left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section .container .left button {
+    padding: 10px 20px;
+    background: #FF6500;
+    border-style: none;
+    border-radius: 15px;
+    color: #f1f1f1;
+    font-size: 1.2em;
+}
+
+section .container .left span {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+
+}
+
+/* section .container .right img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    
+} */
+
+section .container .left span a {
+    margin: 2px;
+}
+
+/* Search Bar Styling */
+.Search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    bottom: 50px;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.Search:hover {
+    transform: scale(1.03);
+}
+
+/* Input Field */
+.Search input {
+    padding: 8px 15px;
+    width: 450px;
+    margin-top: 0;
+    height: 45px;
+    border: 2px solid #080a3c;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.Search input:focus {
+    border-color: #FF6500;
+    box-shadow: 0 0 10px rgba(255, 101, 0, 0.5);
+}
+
+/* Search Button */
+.Search button {
+    padding: 5px 15px;
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(135deg, #1C1678, #3A2FBF);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search button:hover {
+    background: linear-gradient(135deg, #dde71e, #b9d404);
+    color: #080a3c;
+    transform: scale(1.1);
+}
+
+.Search button:active {
+    transform: scale(0.95);
+}
+
+/* Dropdown Select */
+.Search select {
+    padding: 5px 10px;
+    margin-top: 0;
+    width: 100px;
+    height: 38px;
+    border: 2px solid #080a3c;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.1em;
+    background: #fff;
+    color: #1C1678;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search select:hover {
+    border-color: #FF6500;
+}
+
+.Search select option {
+    font-size: 1em;
+    background: white;
+    color: #333;
+}
+
+
+.latest-properties h1 {
+    color: #080a3c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2.5em;
+}
+
+.latest-properties .properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    max-width: 1600px; 
+    background-color: #fff;
+}
+
+.latest-properties .properties .property {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: transform 0.5s;
+    transition: box-shadow 0.5s;
+    
+}
+
+.latest-properties .properties .property img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.latest-properties .properties .property h2  {
+    color: #080a3c;
+    background: white;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.latest-properties .properties .property p {
+    color: #080a3c;
+    background: white;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.latest-properties .properties .property:hover {
+    transform: scale(1.1) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;
+    transition: 0.5s ease !important;
+
+}
+
+/* Container for the news section */
+.latest-news {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.latest-news h1 {
+    color: #080a3c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2.5em;
+
+}
+
+#news-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-right: 20px;
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Ensures that content doesn't overflow the fixed height */
+}
+
+.news-image {
+    flex: 1;
+    max-width: 300px;
+    height: 100%; /* Ensure the image takes the full height of the parent */
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures that the image covers the container while maintaining aspect ratio */
+}
+
+.news-details {
+    flex: 2;
+    padding: 20px;
+    height: 100%; /* Ensure text content takes the full height of the parent */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+.news-details h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.news-details p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

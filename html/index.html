@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/firstpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="../css/testimonial.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/news.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <a class="title" href="">Haven Nest <p>
+                Connecting You to the Best Properties
+            </p></a>
+
+        <ul>
+            <li><a href="">Name</a></li>
+            <li><a href="">Properties</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a class="sign-in" href="">Sign In</a></li>
+            <li><a class="sign-up" href="">Sign Up</a></li>
+
+        </ul>
+
+    </nav>
+    <section>
+        <div class="container">
+            <div class="left">
+                <h1>The right place to <br> achieve your Dream!!</h1>
+                <p>Find your dream home with us where comfort meets elegance and every key unlocks a new beginning.</p>
+                <button>Get Started</button>
+                <span>Or select your place <a href="#">Kandy</a><a href="#">Colombo</a><a href="#">Matara</a><a
+                        href="#">Jaffna</a><a href="#">Easten</a></span>
+            </div>
+            <!-- <div class="right">
+                    <img src="../assetes/building front.png" alt="">
+                </div> -->
+        </div>
+    </section>
+    <div class="Search">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+        <select name="" id="location">
+            <option value="">Kandy</option>
+            <option value="">Colombo</option>
+            <option value="">Matara</option>
+            <option value="">Jaffna</option>
+            <option value="">Easten</option>
+            <option value="">Matale</option>
+            <option value="">Galle</option>
+            <option value="">Kurunagala</option>
+            <option value="">Anuradhapura</option>
+        </select>
+    </div>
+
+    <div class="latest-properties">
+        <h1>Latest Properties</h1>
+        <div class="properties">
+            <div class="property">
+                <img src="../assetes/home1.jpg" alt="">
+                <h2>House in Kandy</h2>
+                <p>Rs. 10,000,000</p>
+            </div>
+            <div class="property">
+                <img src="../assetes/home.jpg" alt="">
+                <h2>House in Colombo</h2>
+                <p>Rs. 20,000,000</p>
+            </div>
+            <div class="property">
+                <img src="../assetes/lux1.jpeg" alt="">
+                <h2>House in Matara</h2>
+                <p>Rs. 15,000,000</p>
+            </div>
+            <div class="property">
+                <img src="../assetes/building2.jpg" alt="">
+                <h2>House in Jaffna</h2>
+                <p>Rs. 12,000,000</p>
+            </div>
+            <div class="property">
+                <img src="../assetes/cmaprt.jpg" alt="">
+                <h2>House in Easten</h2>
+                <p>Rs. 18,000,000</p>
+            </div>
+
+            <div class="property">
+                <img src="../assetes/cmaprt.jpg" alt="">
+                <h2>House in Easten</h2>
+                <p>Rs. 18,000,000</p>
+            </div>
+
+
+            <div class="property">
+                <img src="../assetes/cmaprt.jpg" alt="">
+                <h2>House in Easten</h2>
+                <p>Rs. 18,000,000</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="latest-news">
+        <h1>Latest News</h1>
+        <div id="news-container">
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="../assetes/aprt.jpg" alt="News Image">
+                </div>
+                <div class="news-details">
+                    <h2>House in Kandy</h2>
+                    <p>Rs. 10,000,000</p>
+                    <p>Some details about the property in Kandy...</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="../assetes/cmaprt.jpg" alt="News Image">
+                </div>
+                <div class="news-details">
+                    <h2>House in Colombo</h2>
+                    <p>Rs. 20,000,000</p>
+                    <p>Some details about the property in Colombo...</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-image">
+                    <img src="../assetes/luxury.jpeg" alt="News Image">
+                </div>
+                <div class="news-details">
+                    <h2>House in Matara</h2>
+                    <p>Rs. 15,000,000</p>
+                    <p>Some details about the property in Matara...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+    </div>
+
+    <div class="testimonial">
+        <div class="hod">
+            <h1>Thousands of repeat customers</h1>
+        </div>
+        <div class="hod">
+            <h1>can't be wrong</h1>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>“I was looking for a house in Kandy and I found the perfect one with Haven Nest. They made the
+                    process so easy and I am so happy with my new home.”</p>
+                <h3>John Doe</h3>
+            </div>
+        </div>
+    </div>
+    <div class="frme">
+
+        <div class="form-container">
+            <h1>Drop us a Message</h1>
+
+            <div class="name">
+                <input type="text" placeholder="First Name*" required>
+                <input type="text" placeholder="Second Name*" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email*" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="+94xxxxxxxx" required>
+            </div>
+
+            <div class="input-group">
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="selling">Sell</option>
+                    <option value="buying">Buy</option>
+                    <option value="auction">Auction</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <select name="language" required>
+                    <option value="sn">Sinhala</option>
+                    <option value="tm">Tamil</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <textarea placeholder="Your message?" required></textarea>
+            </div>
+
+            <div class="agree">
+                <input type="checkbox" required>
+                <span>I agree to the terms & conditions</span>
+            </div>
+
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Haven Nest</h2>
+                <p>Your trusted partner in finding the perfect home.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Your City</p>
+                <p><i class="fas fa-phone"></i> +94 712345678</p>
+                <p><i class="fas fa-envelope"></i> info@realestate.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

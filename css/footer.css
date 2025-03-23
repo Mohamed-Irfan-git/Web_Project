@@ -1,0 +1,90 @@
+/* Footer Styles */
+.footer {
+    background: #080a3c; /* Dark background for footer */
+    color: white;
+    padding: 40px 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    background: none; /* Remove unwanted white background */
+}
+
+.footer-section {
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #ff6600; /* Orange color for headings */
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul {
+    color: white;
+    font-size: 14px;
+}
+.footer-section p{
+    padding-top: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600; /* Orange hover effect */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+  
+    background:#080a3c; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    bottom: 0%;
+}
+
+/* Fix white box issue */
+.footer-container * {
+    background: none !important;
+}
+
+.footer-bottom *{
+    background: #080a3c!important ;
+}

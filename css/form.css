@@ -1,0 +1,114 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+Outer Wrapper */
+.frme {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Form Container */
+.form-container {
+    background: white;
+    padding: 30px;
+    width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.form-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.form-container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#080a3c;
+    
+}
+
+/* Name Fields */
+.name {
+    display: flex;
+    gap: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    background: white;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Checkbox */
+.agree {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.agree input {
+    width: 20px;
+   
+
+}
+
+
+/* Submit Button */
+.btn button {
+    width: 100%;
+    background:#ff6600;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
