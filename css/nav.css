@@ -8,8 +8,8 @@
     background-color: white;
 }
 
+
 .nav-bar {
-    position: absolute;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,49 +19,45 @@
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    background-color: white;
 }
 
 .nav-bar .title {
-    position: relative;
-    max-width: 60px;
-    margin-right: 250px;
-    text-decoration: none;
-    white-space: nowrap;
-    color:#FF6500;
+    color: #FF6500;
     font-weight: bold;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.nav-bar .title p{
+.nav-bar .subtitle {
     font-size: 14px;
-    color:  #080a3c;
+    color: #080a3c;
+    margin-left: 10px;
 }
 
 .nav-bar ul {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 .nav-bar ul li {
-    list-style: none;
-    display: flex;
     margin-left: 50px;
     margin-right: 5px;
+    padding-bottom: 5px;
 }
-
 
 .nav-bar ul li a:not(.sign-in):not(.sign-up) {
     display: inline-block;
     text-decoration: none;
-    white-space: nowrap;
     color: #080a3c;
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     padding-right: 5px;
+    transition: color 0.3s ease;
 }
 
 .nav-bar ul li a:not(.sign-in):not(.sign-up)::after {
@@ -71,7 +67,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color:#FF6500;
+    background-color: #FF6500;
     transition: width 0.3s ease;
 }
 
@@ -79,35 +75,198 @@
     width: 100%;
 }
 
-
-.sign-in {
-    border: 2px solid #FF6500;
-    color: #080a3c;
-    padding: 5px 10px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    font-weight: 500px;
-    
+.nav-bar ul li a:not(.sign-in):not(.sign-up):hover {
+    color: #FF6500;
 }
 
-.sign-in:hover {
+/* Dropdown Styles */
+.nav-bar .dropdown {
+    position: relative;
+}
+
+.nav-bar .dropdown .dropbtn {
+    background-color: transparent;
+    color: #080a3c;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .dropdown:hover .dropbtn {
+    color: #FF6500;
+}
+
+/* Dropdown Content */
+.nav-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.nav-bar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Submenu Styles */
+.nav-bar .submenu {
+    position: relative;
+}
+
+.nav-bar .submenu-btn {
+    background-color: transparent;
+    color: #080a3c;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .submenu-btn:hover {
+    color: #FF6500;
+}
+
+.nav-bar .submenu-list {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-bar .submenu:hover .submenu-list {
+    display: block;
+}
+
+.nav-bar .submenu-list li a {
+    display: block;
+    text-decoration: none;
+    color: #080a3c;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar .submenu-list li a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Sign In/Sign Up Buttons */
+.nav-bar ul li .sign-in,
+.nav-bar ul li .sign-up {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-bar ul li .sign-in {
+    border: 2px solid #FF6500;
+    color: #080a3c;
+   
+}
+
+.nav-bar ul li .sign-in:hover {
     background-color: #FF6500;
     color: white;
 }
 
-.sign-up {
-    background: #FF6500;
-    padding: 5px 20px;
-    border-radius: 20px;
-    color: white !important;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    font-weight: 500;
-    
-
+.nav-bar ul li .sign-up {
+    background-color: #FF6500;
+    color: white;
+    border: none;
 }
 
-.sign-up:hover {
-    background-color: #e64a19; 
+.nav-bar ul li .sign-up:hover {
+    background-color: #e64a19;
 }
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        position: fixed; /* Make nav-bar fixed for better visibility on mobile */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10; /* Ensure it sits above other content */
+    }
+
+    .nav-bar .nav-links {
+        cursor: pointer;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        width: 100%; /* Ensure it takes full width */
+        position: fixed; /* Use fixed positioning to stay in place */
+        top: 60px; /* Below the nav-bar */
+        left: 0;
+        padding: 20px 0;
+        z-index: 1; /* Make sure it stays above other content */
+        border-top: 1px solid #ddd; /* Optional: Adds a line separating from the nav-bar */
+    }
+
+    .nav-bar .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-bar .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        margin: 4px 0;
+        background-color: #080a3c;
+    }
+
+    /* Adjust button styles for mobile */
+    .nav-bar .nav-links .sign-in,
+    .nav-bar .nav-links .sign-up {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px ;
+    }
+
+    .nav-bar .nav-links .sign-in {
+        border: 2px solid #FF6500;
+        color: #080a3c;
+        padding: 10px;
+    }
+
+    .nav-bar .nav-links .sign-in:hover {
+        background-color: #FF6500;
+        color: white;
+    }
+
+    .nav-bar .nav-links .sign-up {
+        background-color: #FF6500;
+        color: white;
+        border: none;
+        padding: 10px;
+    }
+
+    .nav-bar .nav-links .sign-up:hover {
+        background-color: #e64a19;
+    }
+}
+

@@ -13,29 +13,57 @@
     <link rel="stylesheet" href="../css/footer.css">
     <script src="../javascript/index.js"></script>
     <script src="../javascript/news.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Home</title>
 </head>
 
 <body>
     <nav class="nav-bar">
-        <a class="title" href="">Haven Nest <p>
-                Connecting You to the Best Properties
-            </p></a>
-
-        <ul>
-            <li><a href="">Name</a></li>
-            <li><a href="">Properties</a></li>
-            <li><a href="">Services</a></li>
+        <a class="title" href="index.html">
+            Haven Nest <br>
+            <span class="subtitle">Connecting You to the Best Properties</span>
+        </a>
+    
+        <ul class="nav-links">
+            <li><a href="#">Name</a></li>
+            <li class="dropdown">
+                <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Properties</button>
+                <div class="dropdown-content" role="menu">
+                    <div class="submenu">
+                        <button class="submenu-btn">For Rent</button>
+                        <ul class="submenu-list">
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Commercial Properties</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu">
+                        <button class="submenu-btn">For Sale</button>
+                        <ul class="submenu-list">
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Commercial Properties</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Services</a></li>
             <li><a href="news.html">News</a></li>
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><a class="sign-in" href="">Sign In</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a class="sign-in" href="#">Sign In</a></li>
             <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
-
         </ul>
-
+    
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
+    
+    
+
     <section>
         <div class="container">
             <div class="left">
@@ -153,7 +181,7 @@
 
     <div class="testimonial">
         <div class="hod">
-            <h1>Thousands of repeat customers</h1>
+            <h1 style="text-align: center;">Thousands of repeat customers</h1>
         </div>
         <div class="hod">
             <h1>can't be wrong</h1>
@@ -291,6 +319,9 @@
             <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
         </div>
     </footer>
+
+        <script src="../javascript/nav.js"></script>
+
 
 
 </body>
