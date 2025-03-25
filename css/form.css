@@ -6,19 +6,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
 }
 
-/* body {
-    background: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-}
-
-Outer Wrapper */
+/* Outer Wrapper */
 .frme {
     margin-bottom: 20px;
     display: flex;
@@ -47,7 +37,6 @@ Outer Wrapper */
     font-size: 30px;
     margin-bottom: 20px;
     color:#080a3c;
-    
 }
 
 /* Name Fields */
@@ -91,15 +80,12 @@ textarea {
 
 .agree input {
     width: 20px;
-   
-
 }
-
 
 /* Submit Button */
 .btn button {
     width: 100%;
-    background:#ff6600;
+    background: #ff6600;
     border: none;
     color: white;
     font-size: 16px;
@@ -111,4 +97,69 @@ textarea {
     transition: 0.3s;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .form-container {
+        width: 70%;
+        padding: 20px;
+    }
 
+    .form-container h1 {
+        font-size: 26px;
+    }
+
+    input, select, textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .btn button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-container h1 {
+        font-size: 24px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn button {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-container h1 {
+        font-size: 22px;
+    }
+
+    input, select, textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .agree {
+        font-size: 12px;
+    }
+}

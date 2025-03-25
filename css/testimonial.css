@@ -1,21 +1,22 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
 
-.testimonial{
+/* Testimonial Styles */
+.testimonial {
     padding: 50px 0;
     font-family: 'Poppins', sans-serif;
 }
 
-.testimonial .hod h1{
+.testimonial .hod h1 {
     font-size: 40px;
     font-weight: 700;
     color: #1C1678;
     justify-content: center;
     align-items: center;
     display: flex;
-    
 }
 
-.testimonial .testimonials{
+.testimonial .testimonials {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -24,10 +25,9 @@
     gap: 10px;
     padding: 10px 20px;
     max-width: 1600px;
-
 }
 
-.testimonial .testimonials .testimonial-item{
+.testimonial .testimonials .testimonial-item {
     background: #fff;
     padding: 30px;
     margin: 10px;
@@ -43,7 +43,7 @@
     height: 250px;
 }
 
-.testimonial .testimonials .testimonial-item p{
+.testimonial .testimonials .testimonial-item p {
     font-size: 14px;
     color: #1C1678;
     margin-top: 10px;
@@ -51,8 +51,65 @@
     padding: 10px;
 }
 
-.testimonial .testimonials .testimonial-item h3{
+.testimonial .testimonials .testimonial-item h3 {
     color: #02383C;
-
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .testimonial .testimonials {
+        gap: 20px;
+    }
+
+    .testimonial .testimonials .testimonial-item {
+        width: 300px; /* Adjust width for tablets */
+        height: 300px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial .testimonials {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .testimonial .testimonials .testimonial-item {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Allow height to auto-adjust */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .testimonial .hod h1 {
+        font-size: 30px; /* Smaller heading for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    /* Center the .hod container for mobile */
+    .testimonial .hod {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center; /* Centers vertically */
+        text-align: center; /* Ensures the text inside is centered */
+        height: 100%; /* Full height to allow vertical centering */
+        padding: 10px; /* Optional, adjust spacing if necessary */
+    }
+
+    /* Style for h1 inside .hod */
+    .testimonial .hod h1 {
+        font-size: 24px; /* Adjust the font size for mobile */
+        margin: 0; /* Remove any default margin */
+        width: 100%; /* Ensures it takes up full width for centering */
+        
+    }
+
+    /* Additional mobile styling for testimonials */
+    .testimonial .testimonials .testimonial-item {
+        width: 100%; /* Full width for mobile */
+        padding: 15px; /* Adjust padding */
+        height: auto; /* Auto height */
+    }
+
+    .testimonial .testimonials .testimonial-item p {
+        font-size: 12px; /* Smaller text for mobile */
+    }
+}

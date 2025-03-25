@@ -53,6 +53,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+       padding-top: 50px;
     }
 
     #p1 {
@@ -92,27 +93,55 @@
     
     <section id="main">
 
-        <nav class="nav-bar">
-            <a class="title" href="index.html">Haven Nest <p>
-                    Connecting You to the Best Properties
-                </p></a>
-    
-            <ul>
-                <li><a href="">Name</a></li>
-                <li><a href="">Properties</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a class="sign-in" href="">Sign In</a></li>
-                <li><a class="sign-up" href="">Sign Up</a></li>
-    
-            </ul>
-    
-        </nav>
-
+        <body>
+            <nav class="nav-bar">
+                <a class="title" href="index.html">
+                    Haven Nest <br>
+                    <span class="subtitle">Connecting You to the Best Properties</span>
+                </a>
+            
+                <ul class="nav-links">
+                    <li><a href="#">Name</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Properties</button>
+                        <div class="dropdown-content" role="menu">
+                            <div class="submenu">
+                                <button class="submenu-btn">For Rent</button>
+                                <ul class="submenu-list">
+                                    <li><a href="#">Houses</a></li>
+                                    <li><a href="#">Apartments</a></li>
+                                    <li><a href="#">Commercial Properties</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu">
+                                <button class="submenu-btn">For Sale</button>
+                                <ul class="submenu-list">
+                                    <li><a href="#">Houses</a></li>
+                                    <li><a href="#">Apartments</a></li>
+                                    <li><a href="#">Commercial Properties</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a class="sign-in" href="#">Sign In</a></li>
+                    <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+                </ul>
+            
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            
+            
+        
         <div id="head">
-            <h3 style="font-family:Franklin Gothic Medium; text-align: center;">Later News</h3>
+            <h3 style="font-family:Franklin Gothic Medium; text-align: center;">Latest News</h3>
         </div>
 
         <hr style="margin-top: 30px;">
@@ -238,6 +267,7 @@
             <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="../javascript/nav.js"></script>
 
 
 </body>

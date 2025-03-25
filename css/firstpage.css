@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
 
+/* Reset styles */
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Section Styling */
 section {
     margin-top: 100px;
     display: flex;
@@ -15,6 +18,7 @@ section {
     background-color: transparent;
 }
 
+/* Container Styling */
 section .container {
     position: relative;
     display: flex;
@@ -28,10 +32,9 @@ section .container {
     background-attachment: fixed;
     background-position: center;
     opacity: 1;
-
-
 }
 
+/* Left Section Styling */
 section .container .left {
     display: flex;
     flex-direction: column;
@@ -41,9 +44,9 @@ section .container .left {
     padding: 80px;
     background-color: #fff;
     opacity: 0.9;
-
 }
 
+/* Heading and Paragraph in Left Section */
 section .container .left h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -69,21 +72,6 @@ section .container .left span {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1.2em;
-
-}
-
-/* section .container .right img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-    
-} */
-
-section .container .left span a {
-    margin: 2px;
 }
 
 /* Search Bar Styling */
@@ -110,7 +98,7 @@ section .container .left span a {
     transform: scale(1.03);
 }
 
-/* Input Field */
+/* Input Field Styling */
 .Search input {
     padding: 8px 15px;
     width: 450px;
@@ -128,7 +116,7 @@ section .container .left span a {
     box-shadow: 0 0 10px rgba(255, 101, 0, 0.5);
 }
 
-/* Search Button */
+/* Button Styling */
 .Search button {
     padding: 5px 15px;
     height: 40px;
@@ -155,7 +143,7 @@ section .container .left span a {
     transform: scale(0.95);
 }
 
-/* Dropdown Select */
+/* Dropdown Select Styling */
 .Search select {
     padding: 5px 10px;
     margin-top: 0;
@@ -184,7 +172,7 @@ section .container .left span a {
     color: #333;
 }
 
-
+/* Latest Properties Section Styling */
 .latest-properties h1 {
     color: #080a3c;
     justify-content: center;
@@ -220,7 +208,6 @@ section .container .left span a {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     transition: transform 0.5s;
     transition: box-shadow 0.5s;
-    
 }
 
 .latest-properties .properties .property img {
@@ -248,25 +235,25 @@ section .container .left span a {
     transform: scale(1.1) !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;
     transition: 0.5s ease !important;
-
 }
 
-/* Container for the news section */
+/* Latest News Section Styling */
 .latest-news {
     position: relative;
     width: 80%;
     max-width: 1200px;
     margin: auto;
 }
+
 .latest-news h1 {
     color: #080a3c;
     justify-content: center;
     align-items: center;
     display: flex;
     font-size: 2.5em;
-
 }
 
+/* News Slider */
 #news-container {
     display: flex;
     overflow: hidden;
@@ -278,27 +265,27 @@ section .container .left span a {
     width: 100%;
     align-items: center;
     margin-right: 20px;
-    height: 300px; /* Set a fixed height */
-    overflow: hidden; /* Ensures that content doesn't overflow the fixed height */
+    height: 300px; 
+    overflow: hidden;
 }
 
 .news-image {
     flex: 1;
     max-width: 300px;
-    height: 100%; /* Ensure the image takes the full height of the parent */
+    height: 100%;
 }
 
 .news-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures that the image covers the container while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 .news-details {
     flex: 2;
     padding: 20px;
-    height: 100%; /* Ensure text content takes the full height of the parent */
-    overflow: hidden; /* Prevents content from overflowing */
+    height: 100%;
+    overflow: hidden;
 }
 
 .news-details h2 {
@@ -311,6 +298,7 @@ section .container .left span a {
     font-size: 1em;
 }
 
+/* Navigation Buttons */
 #prevBtn, #nextBtn {
     position: absolute;
     top: 50%;
@@ -330,4 +318,69 @@ section .container .left span a {
 
 #nextBtn {
     right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .Search input {
+        width: 350px; /* Adjust width for tablets */
+    }
+
+    .latest-properties .properties .property {
+        width: 300px; /* Adjust width for better alignment */
+        margin-bottom: 15px; /* Reduce space between items */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust the container layout */
+    .container {
+        flex-direction: column;
+        padding: 10px; /* Reduce padding */
+    }
+
+    /* Adjust left section */
+    .left {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust input width for smaller screens */
+    .Search input {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 10px; /* Reduce space between input and button */
+    }
+
+    /* Adjust property width */
+    .latest-properties .properties .property {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 10px; /* Reduce space between property items */
+    }
+
+    /* Adjust properties layout */
+    .latest-properties .properties {
+        flex-direction: column;
+        gap: 15px; /* Set a smaller gap */
+    }
+
+    /* Fix text spacing and padding */
+    .latest-properties .properties .property h2,
+    .latest-properties .properties .property p {
+        margin: 0; /* Remove any extra margin */
+        padding: 5px 0; /* Adjust padding to minimize excessive space */
+        line-height: 1.4; /* Set line height to avoid large spacing between lines */
+    }
+
+    /* Adjust the text of testimonial items */
+    .latest-properties .properties .property p {
+        word-wrap: break-word; /* Ensure text wraps properly */
+        text-align: justify; /* Optional: justify text */
+    }
+
+    /* Optional: Ensure no additional space between columns in flexbox */
+    .latest-properties .properties {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
