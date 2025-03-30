@@ -253,7 +253,7 @@ section .container .left span {
     font-size: 2.5em;
 }
 
-/* News Slider */
+
 #news-container {
     display: flex;
     overflow: hidden;
@@ -298,7 +298,7 @@ section .container .left span {
     font-size: 1em;
 }
 
-/* Navigation Buttons */
+
 #prevBtn, #nextBtn {
     position: absolute;
     top: 50%;
@@ -320,64 +320,63 @@ section .container .left span {
     right: 10px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1024px) {
     .Search input {
-        width: 350px; /* Adjust width for tablets */
+        width: 350px; 
     }
 
     .latest-properties .properties .property {
-        width: 300px; /* Adjust width for better alignment */
-        margin-bottom: 15px; /* Reduce space between items */
+        width: 300px; 
+        margin-bottom: 15px; 
     }
 }
 
 @media (max-width: 768px) {
-    /* Adjust the container layout */
+  
     .container {
         flex-direction: column;
-        padding: 10px; /* Reduce padding */
+        padding: 10px; 
     }
 
-    /* Adjust left section */
     .left {
         width: 100%;
         padding: 10px;
     }
 
-    /* Adjust input width for smaller screens */
+    
     .Search input {
-        width: 100%; /* Full width for smaller screens */
-        margin-bottom: 10px; /* Reduce space between input and button */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 
     /* Adjust property width */
     .latest-properties .properties .property {
-        width: 100%; /* Full width for smaller screens */
-        margin-bottom: 10px; /* Reduce space between property items */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 
-    /* Adjust properties layout */
+   
     .latest-properties .properties {
         flex-direction: column;
-        gap: 15px; /* Set a smaller gap */
+        gap: 15px; 
     }
 
-    /* Fix text spacing and padding */
+   
     .latest-properties .properties .property h2,
     .latest-properties .properties .property p {
-        margin: 0; /* Remove any extra margin */
-        padding: 5px 0; /* Adjust padding to minimize excessive space */
-        line-height: 1.4; /* Set line height to avoid large spacing between lines */
+        margin: 0; 
+        padding: 5px 0; 
+        line-height: 1.4; 
     }
 
-    /* Adjust the text of testimonial items */
+   
     .latest-properties .properties .property p {
-        word-wrap: break-word; /* Ensure text wraps properly */
-        text-align: justify; /* Optional: justify text */
+        word-wrap: break-word; 
+        text-align: justify; /
     }
 
-    /* Optional: Ensure no additional space between columns in flexbox */
+   
     .latest-properties .properties {
         display: flex;
         flex-wrap: wrap;
