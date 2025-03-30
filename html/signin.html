@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/sign-in.css">
+    
+
+    <title>Sign-In</title>
+   
 </head>
 
 <body>
-
-    <!----------------------nav------------------------>
-
     <nav class="nav-bar">
         <a class="title" href="index.html">
             Haven Nest 
@@ -59,73 +58,29 @@
         </div>
     </nav>
 
-    <!--------------------------------who we are------------------------------------------>
 
-    <div class="about-container">
-        <h1>Who We Are</h1>
-        <p>At Simplebooks, we’re more than just a business registration and consultancy service.
-            Over the years, we’ve helped incorporate over 5,000 small businesses across the island.
-            From registrations to financial consulting and legal services, our local knowledge and
-            expertise make us the most trusted partner for Sri Lankan entrepreneurs.</p>
+    <div class="container">
+        <form action="" class="sign-inn">
+            <h1>Welcome Back!</h1>
+            <div class="groupby-input">
+                <label for="">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+            </div>
 
-        <img src="../assetes/photo1.jpg" alt="" class="img-about">
+            <div class="groupby-input">
+                <label for="">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
 
+            <button type="submit">Sign In</button>
 
+            <p>Forgot password? <a href="">Reset</a></p>
+            <p>OR</p>
+            <p><img src="../assetes/google.png" alt="">Sign in with Google</p>
+            <p>New to Haven nest? <a href="">Create an account</a></p>
+
+        </form>
     </div>
-
-    <!-----------------------------contact us--------------------------------------------->
-
-    <div class="frme" id="SignUp">
-
-        <div class="form-container">
-            <h1>Drop us a Message</h1>
-
-            <div class="name">
-                <input type="text" placeholder="First Name*" required>
-                <input type="text" placeholder="Second Name*" required>
-            </div>
-
-            <div class="input-group">
-                <input type="email" placeholder="Enter your email*" required>
-            </div>
-
-            <div class="input-group">
-                <input type="text" placeholder="+94xxxxxxxx" required>
-            </div>
-
-            <div class="input-group">
-                <select name="service" required>
-                    <option value="">Select Service</option>
-                    <option value="selling">Sell</option>
-                    <option value="buying">Buy</option>
-                    <option value="auction">Auction</option>
-                </select>
-            </div>
-
-            <div class="input-group">
-                <select name="language" required>
-                    <option value="sn">Sinhala</option>
-                    <option value="tm">Tamil</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
-
-            <div class="input-group">
-                <textarea placeholder="Your message?" required></textarea>
-            </div>
-
-            <div class="agree">
-                <input type="checkbox" required>
-                <span>I agree to the terms & conditions</span>
-            </div>
-
-            <div class="btn">
-                <button type="submit">Submit</button>
-            </div>
-        </div>
-    </div>
-
-    <!------------------------------footer--------------------------------->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -160,7 +115,10 @@
             <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="../javascript/nav.js"></script>
+
+
 </body>
 
 </html>

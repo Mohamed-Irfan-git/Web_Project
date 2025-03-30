@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-    background: #080a3c; /* Dark background for footer */
+    background: #080a3c; 
     color: white;
     padding: 40px 0;
     padding-bottom: 0;
@@ -14,7 +14,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
-    background: none; /* Remove unwanted white background */
+    background: none; 
 }
 
 .footer-section {
@@ -24,7 +24,7 @@
 }
 
 .footer-section h2, .footer-section h3 {
-    color: #ff6600; /* Orange color for headings */
+    color: #ff6600; 
     font-weight: bold;
 }
 

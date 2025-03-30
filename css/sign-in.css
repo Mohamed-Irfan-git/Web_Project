@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 100px;
+
+
+}
+.sign-inn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 450px;
+    
+  
+    
+}
+.container .sign-inn h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#080a3c;
+    font-family: 'Pacifico', cursive;
+}
+.container .sign-inn .groupby-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    color:#080a3c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    
+}
+.container .sign-inn .groupby-input label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:#080a3c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.container .sign-inn .groupby-input input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#080a3c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    outline: none;
+    background-color: azure;
+}
+
+.container .sign-inn button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: auto;
+}
+
+.container .sign-inn p{
+    margin-top: 10px;
+    font-size: 13px;
+    color:#080a3c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container .sign-inn p a {
+    color: #1c23eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.container .sign-inn p img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 15px;
+}
