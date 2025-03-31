@@ -4,19 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/sign-in.css">
-    
-
-    <title>Sign-In</title>
-   
+    <title>Rent House</title>
+    <link rel="stylesheet" href="../../../css/nav.css">
+    <link rel="stylesheet" href="../../../css/Rent/Housees.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
 </head>
 
 <body>
     <nav class="nav-bar">
         <a class="title" href="index.html">
-            Haven Nest 
+            Haven Nest
             <p class="subtitle">Connecting You to the Best Properties</p>
         </a>
 
@@ -27,7 +24,7 @@
                     <div class="submenu">
                         <button class="submenu-btn">For Rent</button>
                         <ul class="submenu-list">
-                            <li><a href="../html/properties/Rent/Housees.html">Houses</a></li>
+                            <li><a href="Housees.html">Houses</a></li>
                             <li><a href="#">Apartments</a></li>
                             <li><a href="#">Commercial Properties</a></li>
                         </ul>
@@ -43,10 +40,10 @@
                 </div>
             </li>
             <li><a href="#">Services</a></li>
-            <li><a href="news.html">News</a></li>
+            <li><a href="../../../html/news.html">News</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li><a class="sign-in" href="signin.html">Sign In</a></li>
+            <li><a href="../../../html/contact.html">Contacts</a></li>
+            <li><a class="sign-in" href="../../../html/signin.html">Sign In</a></li>
             <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
         </ul>
 
@@ -57,29 +54,73 @@
         </div>
     </nav>
 
+    <div class="house-container">
+        <div class="image">
+            <img src="../../../assetes/house rent.jpg" alt="">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Type price/Location">
+            <button type="submit">Search</button>
+        </div>
 
-    <div class="container">
-        <form action="" class="sign-inn">
-            <h1>Welcome Back!</h1>
-            <div class="groupby-input">
-                <label for="">Email Address</label>
-                <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+        <div class="house-details">
+            <h1>Show case house Properties</h1>
+            <div class="card-container">
+                <div class="house-card">
+                    <img src="../../../assetes/house5.jpg" alt="House 1">
+                    <h2>House 1</h2>
+                    <p>Location: Colombo</p>
+                    <p class="rs">Price: $500/month</p>
+                    <button class="view-details">View Details</button>
+
+                </div>
+                <div class="house-card">
+                    <img src="../../../assetes/house2.jpeg" alt="House 1">
+                    <h2>House 1</h2>
+                    <p>Location: Colombo</p>
+                    <p class="rs">Price: $500/month</p>
+                    <button class="view-details">View Details</button>
+
+                </div>
+                <div class="house-card">
+                    <img src="../../../assetes/house4.jpg" alt="House 1">
+                    <h2>House 1</h2>
+                    <p>Location: Colombo</p>
+                    <p class="rs">Price: $500/month</p>
+                    <button class="view-details">View Details</button>
+
+                </div>
+                <div class="house-card">
+                    <img src="../../../assetes/house3.jpeg" alt="House 1">
+                    <h2>House 1</h2>
+                    <p>Location: Colombo</p>
+                    <p class="rs">Price: $500/month</p>
+                    <button class="view-details">View Details</button>
+
+                </div>
+                <div class="house-card">
+                    <img src="../../../assetes/house6.jpg" alt="House 1">
+                    <h2>House 1</h2>
+                    <p>Location: Colombo</p>
+                    <p class="rs">Price: $500/month</p>
+                    <button class="view-details">View Details</button>
+
+                </div>
             </div>
 
-            <div class="groupby-input">
-                <label for="">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter your password" required>
-            </div>
 
-            <button type="submit">Sign In</button>
 
-            <p>Forgot password? <a href="">Reset</a></p>
-            <p>OR</p>
-            <p><img src="../assetes/google.png" alt="">Sign in with Google</p>
-            <p>New to Haven nest? <a href="">Create an account</a></p>
+        </div>
 
-        </form>
+
+
     </div>
+
+
+
+
+
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
