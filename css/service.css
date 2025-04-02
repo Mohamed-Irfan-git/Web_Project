@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.listing-options{
+  margin-top: 100px;
+}
+
+.service{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* Table styles */
+#servicet {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#servicet td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#servicet tr:nth-child(even){background-color: #f2f2f2;}
+
+#servicet tr:hover {background-color: #ddd;}
+
+#servicet th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #FB5607  ;
+  color: white;
+}
+
+
+/*additional service */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    padding: 10px 0;
+}
+.additional_list{
+  justify-content: center;
+}
+
+.additional {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.additional h2 {
+  color: #FB5607;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.additional ul {
+  list-style: none;
+  padding: 0;
+}
+
+.additional li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+
+  }
+.icon {
+    color: #FB5607;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+/* why choose us*/
+.chooseus {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chooseus h2 {
+    color: #FB5607;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chooseus ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .chooseus li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+ 
