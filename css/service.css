@@ -49,25 +49,17 @@
   color: white;
 }
 
-.listing-options .servicet tr:nth-child(even){
-  background-color: #0f0317 !important;
-}
-
-.listing-options .servicet tr:hover {
-  background-color: #e01919 !important;
-}
-
 
 /*additional service */
-ul {
+ul .additional_list {
     list-style-type: none;
     padding: 0;
     text-align: center;
 }
 
-ul li {
+ul .additional_list {
     padding: 10px 0;
-}
+}  
 .additional_list{
   justify-content: center;
 }
