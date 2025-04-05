@@ -10,38 +10,45 @@
 }
 
 .listing-options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
   margin-top: 100px;
+
+
+
 }
 
-.service{
+/* .service{
   margin-top: 50px;
   margin-bottom: 100px;
-}
+} */
 
 /* Table styles */
-#servicet {
+.servicet {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+
 }
 
-#servicet td, #customers th {
+.servicet td {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#servicet tr:nth-child(even){background-color: #f2f2f2;}
 
-#servicet tr:hover {background-color: #ddd;}
 
-#servicet th {
+.servicet th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   background-color: #FB5607  ;
   color: white;
 }
-/*
+
 
 /*additional service */
 ul .additional_list {
