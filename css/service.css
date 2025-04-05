@@ -41,18 +41,18 @@
   background-color: #FB5607  ;
   color: white;
 }
-
+/*
 
 /*additional service */
-ul {
+ul .additional_list {
     list-style-type: none;
     padding: 0;
     text-align: center;
 }
 
-ul li {
+ul .additional_list {
     padding: 10px 0;
-}
+}  
 .additional_list{
   justify-content: center;
 }
