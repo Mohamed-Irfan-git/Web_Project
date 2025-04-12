@@ -1,317 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/news.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-  
-=======
-    <style>
-
-        
-        .grid-container1 {
-          display: grid;
-          grid-template-columns: 75% 25%;
-          gap: 0px;
-          background-color: transparent;
-          padding: 110px 20px 100px 20px;
-        }
-      
-        .grid-container1 div {
-          background-color: transparent;
-          text-align: center;
-          padding: 10px;
-          font-size: 20px;
-        }
-      
-        .grid-container1 img {
-          width: 100%;
-          margin-left: 0;
-          border-radius: 10px;
-        }
-
-                                            /* section2 */
-        .grid-container2 {
-          display: grid;
-          grid-template-columns: 25% 75%;
-          gap: 0px;
-          background-color: transparent;
-          padding: 100px 20px 100px 20px;
-        }
-        .grid-container2 div {
-          background-color: transparent;
-          text-align: center;
-          padding: 10px;
-          font-size: 20px;
-        }
-      
-        .grid-container2 img {
-          width: 100%;
-          margin-left: 0;
-          border-radius: 10px;
-        }
-
-                                        /* section 3 */
-        .grid-container3 {
-          display: grid;
-          grid-template-columns: 75% 25%;
-          gap: 0px;
-          background-color: transparent;
-          padding: 100px 20px 100px 20px;
-        }
-        .grid-container3 div {
-          background-color: transparent;
-          text-align: center;
-          padding: 10px;
-          font-size: 20px;
-        }
-      
-        .grid-container3 img {
-          width: 100%;
-          margin-left: 0;
-          border-radius: 10px;
-        }
-                                        /* section 4 */
-        .grid-container4 {
-          display: grid;
-          grid-template-columns: 25% 75%;
-          gap: 0px;
-          background-color: transparent;
-          padding: 100px 20px 100px 20px;
-        }
-        .grid-container4 div {
-          background-color: transparent;
-          text-align: center;
-          padding: 10px;
-          font-size: 20px;
-        }
-      
-        .grid-container4 img {
-          width: 100%;
-          margin-left: 0;
-          border-radius: 10px;
-        }
-
-      </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
->>>>>>> 9bf3ebe6c39e96d82e32cbb2447c955ffd4af2ef
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/news.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
 
-                                <!-- nav -->
-    <nav class="nav-bar">
-        <a class="title" href="index.html"> 
-            Haven Nest
-            <p class="subtitle">Connecting You to the Best Properties</p>
-        </a>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <a class="title" href="index.html">
+      Haven Nest
+      <p class="subtitle">Connecting You to the Best Properties</p>
+    </a>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Properties</button>
+        <div class="dropdown-content" role="menu">
+          <div class="submenu">
+            <button class="submenu-btn">For Rent</button>
+            <ul class="submenu-list">
+              <li><a href="../html/properties/Rent/Housees.html">Houses</a></li>
+              <li><a href="../html/properties/Rent/Apartment.html">Apartments</a></li>
+              <li><a href="../html/properties/Rent/commercial.html">Commercial Properties</a></li>
+            </ul>
+          </div>
+          <div class="submenu">
+            <button class="submenu-btn">For Sale</button>
+            <ul class="submenu-list">
+              <li><a href="#">Houses</a></li>
+              <li><a href="#">Apartments</a></li>
+              <li><a href="#">Commercial Properties</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+      <li><a class="sign-in" href="signin.html">Sign In</a></li>
+      <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-<<<<<<< HEAD
-=======
+  <section>
+    <div class="grid-container1">
+      <div class="item1">
+        <b>🏠 U.S. Real Estate Market: Surge in Affordable and Luxury Segments</b><br /><br />
+        Realtor.com reports significant price increases in various U.S. ZIP codes from Q1 2024 to Q1 2025.
+        Sheffield, AL (35660) leads with a 50% rise to $194,900. Luxury markets also see substantial growth,
+        with West Palm Beach, FL experiencing an 82.4% increase to $3.1 million.
+      </div>
+      <div class="item2">
+        <img src="../assetes/sri.jpg" alt="Real estate image" />
+      </div>
+    </div>
+  </section>
 
->>>>>>> 9bf3ebe6c39e96d82e32cbb2447c955ffd4af2ef
-        <ul class="nav-links">
-            <li class="dropdown">
-                <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Properties</button>
-                <div class="dropdown-content" role="menu">
-                    <div class="submenu">
-                        <button class="submenu-btn">For Rent</button>
-                        <ul class="submenu-list">
-                            <li><a href="../html/properties/Rent/Housees.html">Houses</a></li>
-                            <li><a href="#">Apartments</a></li>
-                            <li><a href="#">Commercial Properties</a></li>
-                        </ul>
-                    </div>
-                    <div class="submenu">
-                        <button class="submenu-btn">For Sale</button>
-                        <ul class="submenu-list">
-                            <li><a href="#">Houses</a></li>
-                            <li><a href="#">Apartments</a></li>
-                            <li><a href="#">Commercial Properties</a></li>
-                        </ul>
-                    </div>
-<<<<<<< HEAD
-=======
+  <hr />
 
+  <section>
+    <div class="grid-container2">
+      <div class="item2">
+        <img src="../assetes/low.jpeg" alt="Real estate image" />
+      </div>
+      <div class="item1">
+        <b>⚖️ Antitrust Lawsuit Continues Against Major Real Estate Brokerages</b><br /><br />
+        A U.S. District Judge has declined Howard Hanna Real Estate Services' request to recuse himself from a
+        high-profile antitrust lawsuit alleging collusion to inflate residential sales commissions. The case is set to
+        proceed in Missouri.
+      </div>
+    </div>
+  </section>
 
-    <section id="main">
+  <hr />
 
-        <body>
-            <nav class="nav-bar">
-                <a class="title" href="index.html">
-                    Haven Nest 
-                    <p class="subtitle">Connecting You to the Best Properties</p>
-                </a>
+  <section>
+    <div class="grid-container3">
+      <div class="item1">
+        <b>🏢 Scentre Group Shares Steady Amid Real Estate Sector Rally</b><br /><br />
+        While the Real Estate sector rose by 1.63%, Scentre Group's shares remained steady, closing below their 52-week
+        high. Trading volume was also lower than the 30-day average.
+      </div>
+      <div class="item2">
+        <img src="../assetes/save.jpg" alt="Real estate image" />
+      </div>
+    </div>
+  </section>
 
-                <ul class="nav-links">
-                    <li class="dropdown">
-                        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Properties</button>
-                        <div class="dropdown-content" role="menu">
-                            <div class="submenu">
-                                <button class="submenu-btn">For Rent</button>
-                                <ul class="submenu-list">
-                                    <li><a href="../html/properties/Rent/Housees.html">Houses</a></li>
-                                    <li><a href="./properties/Rent/Apartment.html">Apartments</a></li>
-                                    <li><a href="./properties/Rent/commercial.html">Commercial Properties</a></li>
-                                </ul>
-                            </div>
-                            <div class="submenu">
-                                <button class="submenu-btn">For Sale</button>
-                                <ul class="submenu-list">
-                                    <li><a href="#">Houses</a></li>
-                                    <li><a href="#">Apartments</a></li>
-                                    <li><a href="#">Commercial Properties</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a class="sign-in" href="signin.html">Sign In</a></li>
-                    <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
-                </ul>
+  <hr />
 
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
->>>>>>> 9bf3ebe6c39e96d82e32cbb2447c955ffd4af2ef
-                </div>
-            </li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li><a class="sign-in" href="signin.html">Sign In</a></li>
-            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+  <section>
+    <div class="grid-container4">
+      <div class="item2">
+        <img src="../assetes/4.jpg" alt="Real estate image" />
+      </div>
+      <div class="item1">
+        <b>🌴 Former Marvel CEO Lists Palm Beach Townhouse for $18.95M</b><br /><br />
+        Isaac "Ike" Perlmutter has listed his 6,300-square-foot oceanfront townhouse in Palm Beach, Florida, for $18.95
+        million, nearly doubling its 2023 purchase price. The property boasts luxury amenities and proximity to
+        Mar-a-Lago.
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>Haven Nest</h2>
+        <p>Your trusted partner in finding the perfect home.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Properties</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-
-                            <!-- section 1 -->
-
-    <section>
-      <div class="grid-container1">
-        <div class="item1">
-          <b>🏠 U.S. Real Estate Market: Surge in Affordable and Luxury Segments</b> <br><br>
-          Realtor.com reports significant price increases in various U.S. ZIP codes from Q1 2024 to Q1 2025.
-          Sheffield, AL (35660) leads with a 50% rise to $194,900. Luxury markets also see substantial growth,
-          with West Palm Beach, FL experiencing an 82.4% increase to $3.1 million.
-        </div>
-        <div class="item2">
-          <img src="../assetes/sri.jpg" alt="Real estate image">
-        </div>
       </div>
-    </section>
-
-    <hr>
-
-                            <!-- section 2 -->
-
-    <section>
-      <div class="grid-container2">
-
-          <div class="item2">
-            <img src="../assetes/low.jpeg" alt="Real estate image">
-          </div>
-
-          <div class="item1">
-            <b>⚖️ Antitrust Lawsuit Continues Against Major Real Estate Brokerages</b> <br><br>
-            A U.S. District Judge has declined Howard Hanna Real Estate Services' request to recuse himself from a high-profile antitrust lawsuit alleging collusion to inflate residential sales commissions. The case is set to proceed in Missouri.
-        </div>
-
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Your City</p>
+        <p><i class="fas fa-phone"></i> +94 712345678</p>
+        <p><i class="fas fa-envelope"></i> info@realestate.com</p>
       </div>
-    </section>
-
-    <hr>
-
-                        <!-- section 3 -->
-
-    <section>
-        <div class="grid-container3">
-          <div class="item1">
-            <b>🏢 Scentre Group Shares Steady Amid Real Estate Sector Rally</b> <br><br>
-            While the Real Estate sector rose by 1.63%, Scentre Group's shares remained steady, closing below their 52-week high. Trading volume was also lower than the 30-day average. 
-          </div>
-          <div class="item2">
-            <img src="../assetes/save.jpg" alt="Real estate image">
-          </div>
-        </div>
-      </section>
-
-      <hr>
-
-                            <!-- section 4 -->
-
-    <section>
-        <div class="grid-container4">
-  
-            <div class="item2">
-              <img src="../assetes/4.jpg" alt="Real estate image">
-            </div>
-  
-            <div class="item1">
-              <b>🌴 Former Marvel CEO Lists Palm Beach Townhouse for $18.95M</b> <br><br>
-              Isaac "Ike" Perlmutter has listed his 6,300-square-foot oceanfront townhouse in Palm Beach, Florida, for $18.95 million, nearly doubling its 2023 purchase price. The property boasts luxury amenities and proximity to Mar-a-Lago.
-          </div>
-  
-        </div>
-      </section>
-
-      <hr>
-
-                <!-- footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h2>Haven Nest</h2>
-                <p>Your trusted partner in finding the perfect home.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Properties</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Your City</p>
-                <p><i class="fas fa-phone"></i> +94 712345678</p>
-                <p><i class="fas fa-envelope"></i> info@realestate.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 </body>
 
 </html>
-      
