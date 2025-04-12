@@ -9,6 +9,11 @@
     
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .listing-options{
   display: flex;
   justify-content: center;
@@ -21,10 +26,6 @@
 
 }
 
-/* .service{
-  margin-top: 50px;
-  margin-bottom: 100px;
-} */
 
 /* Table styles */
 .servicet {
@@ -152,18 +153,34 @@ ul .additional_list {
 }
 button {
     margin: 10px;
+    
+}
+
+/* button style*/ 
+.jsbtn {
+  position: relative;
+  font-size: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  color: black;
+  background-color: #FB5607;
+  
+}
+
+.jsbtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-/*style fore js button*/
-
-.jsbtn{
-  border-color:black  ;
-  border-radius: 10px;
-  background-color:#FB5607 ;
-  color: white;
-  opacity: 70%;
-}
 #modalContent{
   border-radius: 10px;
   border-color: #FB5607;
