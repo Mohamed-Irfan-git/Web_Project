@@ -25,6 +25,10 @@ html {
 
 
 }
+.listing-options h2{
+  margin:20px;
+
+}
 
 
 /* Table styles */
@@ -181,8 +185,26 @@ button {
 }
 
 
+<<<<<<< HEAD
+=======
+/*style fore js button*/
+
+ .jsbtn{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border-color:black  ;
+  border-radius: 10px;
+  color: #080a3c;
+  background-color: #FF6500;
+  opacity: 70%;
+  padding: 5px;
+  border: none;
+  font-weight: 500;
+  padding: 5px;
+}
+>>>>>>> 9bf3ebe6c39e96d82e32cbb2447c955ffd4af2ef
 #modalContent{
   border-radius: 10px;
-  border-color: #FB5607;
-  background-color: #FB5607;
+  color: tomato;
 }
