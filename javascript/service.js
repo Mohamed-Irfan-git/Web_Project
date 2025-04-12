@@ -70,12 +70,8 @@ function showPopup(serviceName) {
             essential paperwork 
             involved in real estate transactions.`;
             break;
-
-           
-
-
-                
-
+      
+    
     }
 
     modal.style.display = "block";
@@ -88,4 +84,6 @@ function closePopup() {
 
     modal.style.display = "none";
     overlay.style.display = "none";
+  
+    
 }
