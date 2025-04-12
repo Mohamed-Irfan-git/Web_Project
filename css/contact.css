@@ -24,7 +24,7 @@
 .about-container h1{
  font-size: 40px;
   margin-bottom: 20px;
-  font-family: Pacifico, cursive;
+  font-family: 'Poppins', sans-serif;
 }
 .about-container p{
   font-size: 15px;
@@ -35,11 +35,9 @@
 }
 .img-about{
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin-bottom: 50px;
-
- 
 }
