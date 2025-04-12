@@ -1,20 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/news.css">
+    <style>
+
+        
+        .grid-container1 {
+          display: grid;
+          grid-template-columns: 75% 25%;
+          gap: 0px;
+          background-color: transparent;
+          padding: 110px 20px 100px 20px;
+        }
+      
+        .grid-container1 div {
+          background-color: transparent;
+          text-align: center;
+          padding: 10px;
+          font-size: 20px;
+        }
+      
+        .grid-container1 img {
+          width: 100%;
+          margin-left: 0;
+          border-radius: 10px;
+        }
+
+                                            /* section2 */
+        .grid-container2 {
+          display: grid;
+          grid-template-columns: 25% 75%;
+          gap: 0px;
+          background-color: transparent;
+          padding: 100px 20px 100px 20px;
+        }
+        .grid-container2 div {
+          background-color: transparent;
+          text-align: center;
+          padding: 10px;
+          font-size: 20px;
+        }
+      
+        .grid-container2 img {
+          width: 100%;
+          margin-left: 0;
+          border-radius: 10px;
+        }
+
+                                        /* section 3 */
+        .grid-container3 {
+          display: grid;
+          grid-template-columns: 75% 25%;
+          gap: 0px;
+          background-color: transparent;
+          padding: 100px 20px 100px 20px;
+        }
+        .grid-container3 div {
+          background-color: transparent;
+          text-align: center;
+          padding: 10px;
+          font-size: 20px;
+        }
+      
+        .grid-container3 img {
+          width: 100%;
+          margin-left: 0;
+          border-radius: 10px;
+        }
+                                        /* section 4 */
+        .grid-container4 {
+          display: grid;
+          grid-template-columns: 25% 75%;
+          gap: 0px;
+          background-color: transparent;
+          padding: 100px 20px 100px 20px;
+        }
+        .grid-container4 div {
+          background-color: transparent;
+          text-align: center;
+          padding: 10px;
+          font-size: 20px;
+        }
+      
+        .grid-container4 img {
+          width: 100%;
+          margin-left: 0;
+          border-radius: 10px;
+        }
+
+      </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
+                                <!-- nav -->
+    <nav class="nav-bar">
+        <a class="title" href="index.html"> 
+            Haven Nest
+            <p class="subtitle">Connecting You to the Best Properties</p>
+        </a>
+
+
+        <ul class="nav-links">
+            <li class="dropdown">
+                <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Properties</button>
+                <div class="dropdown-content" role="menu">
+                    <div class="submenu">
+                        <button class="submenu-btn">For Rent</button>
+                        <ul class="submenu-list">
+                            <li><a href="../html/properties/Rent/Housees.html">Houses</a></li>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Commercial Properties</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu">
+                        <button class="submenu-btn">For Sale</button>
+                        <ul class="submenu-list">
+                            <li><a href="#">Houses</a></li>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Commercial Properties</a></li>
+                        </ul>
+                    </div>
 
 
     <section id="main">
@@ -61,101 +174,100 @@
                     <span></span>
                     <span></span>
                 </div>
-            </nav>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a class="sign-in" href="signin.html">Sign In</a></li>
+            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
 
-            <section id="main1">
+                            <!-- section 1 -->
 
-                <div id="p1">
-                    <h1 style="font-size: 2em; text-align: center; ">Business Registration</h1>
-
-                    <p style="padding-top: 20px; padding-top: 60px;">Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Nobis voluptatem commodi, veritatis reprehenderit ab
-                        asperiores magni eveniet rerum illo iste maiores
-                        numquam sed dolor tempora, officia dicta cupiditate
-                        alias mollitia.</p>
-                </div>
-
-
-                <div class="p2">
-                    <img src="../assetes/sri.png" alt="">
-                </div>
-
-            </section>
-
-            <hr style="margin-top: 40px;">
-
-
-            <section id="main2">
-
-                <div class="p2">
-                    <img src="../assetes/2.jpg" alt="">
-                </div>
-
-
-
-                <div id="p1">
-                    <h1 style="font-size: 2em; text-align: center;">Business Registration</h1>
-
-                    <p style="padding-top: 20px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nobis voluptatem commodi, veritatis reprehenderit ab
-                        asperiores magni eveniet rerum illo iste maiores
-                        numquam sed dolor tempora, officia dicta cupiditate
-                        alias mollitia.</p>
-                </div>
-
-            </section>
-
-            <hr style="margin-top: 30px;">
-
-
-            <section id="main3">
-
-                <div id="p1">
-                    <h1 style="font-size: 2em; text-align: center;">Business Registration</h1>
-
-                    <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nobis voluptatem commodi, veritatis reprehenderit ab
-                        asperiores magni eveniet rerum illo iste maiores
-                        numquam sed dolor tempora, officia dicta cupiditate
-                        alias mollitia.</p>
-                </div>
-
-                <div class="p2">
-                    <img src="../assetes/sri.png" alt="">
-                </div>
-
-            </section>
-
-            <hr style="margin-top: 30px;">
-
-            <section id="main2">
-
-                <div class="p2">
-                    <img src="../assetes/2.jpg" alt="">
-                </div>
-
-
-
-                <div id="p1">
-                    <h1 style="font-size: 2em; text-align: center;">Business Registration</h1>
-
-                    <p style="padding-top: 20px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nobis voluptatem commodi, veritatis reprehenderit ab
-                        asperiores magni eveniet rerum illo iste maiores
-                        numquam sed dolor tempora, officia dicta cupiditate
-                        alias mollitia.</p>
-                </div>
-
-            </section>
-
+    <section>
+      <div class="grid-container1">
+        <div class="item1">
+          <b>🏠 U.S. Real Estate Market: Surge in Affordable and Luxury Segments</b> <br><br>
+          Realtor.com reports significant price increases in various U.S. ZIP codes from Q1 2024 to Q1 2025.
+          Sheffield, AL (35660) leads with a 50% rise to $194,900. Luxury markets also see substantial growth,
+          with West Palm Beach, FL experiencing an 82.4% increase to $3.1 million.
+        </div>
+        <div class="item2">
+          <img src="../assetes/sri.jpg" alt="Real estate image">
+        </div>
+      </div>
     </section>
 
+    <hr>
+
+                            <!-- section 2 -->
+
+    <section>
+      <div class="grid-container2">
+
+          <div class="item2">
+            <img src="../assetes/low.jpeg" alt="Real estate image">
+          </div>
+
+          <div class="item1">
+            <b>⚖️ Antitrust Lawsuit Continues Against Major Real Estate Brokerages</b> <br><br>
+            A U.S. District Judge has declined Howard Hanna Real Estate Services' request to recuse himself from a high-profile antitrust lawsuit alleging collusion to inflate residential sales commissions. The case is set to proceed in Missouri.
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+                        <!-- section 3 -->
+
+    <section>
+        <div class="grid-container3">
+          <div class="item1">
+            <b>🏢 Scentre Group Shares Steady Amid Real Estate Sector Rally</b> <br><br>
+            While the Real Estate sector rose by 1.63%, Scentre Group's shares remained steady, closing below their 52-week high. Trading volume was also lower than the 30-day average. 
+          </div>
+          <div class="item2">
+            <img src="../assetes/save.jpg" alt="Real estate image">
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+                            <!-- section 4 -->
+
+    <section>
+        <div class="grid-container4">
+  
+            <div class="item2">
+              <img src="../assetes/4.jpg" alt="Real estate image">
+            </div>
+  
+            <div class="item1">
+              <b>🌴 Former Marvel CEO Lists Palm Beach Townhouse for $18.95M</b> <br><br>
+              Isaac "Ike" Perlmutter has listed his 6,300-square-foot oceanfront townhouse in Palm Beach, Florida, for $18.95 million, nearly doubling its 2023 purchase price. The property boasts luxury amenities and proximity to Mar-a-Lago.
+          </div>
+  
+        </div>
+      </section>
+
+      <hr>
+
+                <!-- footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <h2>Real Estate</h2>
+                <h2>Haven Nest</h2>
                 <p>Your trusted partner in finding the perfect home.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -186,9 +298,8 @@
             <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="../javascript/nav.js"></script>
-
 
 </body>
 
 </html>
+      
