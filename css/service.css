@@ -20,6 +20,10 @@
 
 
 }
+.listing-options h2{
+  margin:20px;
+
+}
 
 /* .service{
   margin-top: 50px;
@@ -157,7 +161,7 @@ button {
 
 /*style fore js button*/
 
-td .jsbtn{
+ .jsbtn{
   display: flex;
   justify-content: right;
   align-items: center;
@@ -169,6 +173,7 @@ td .jsbtn{
   padding: 5px;
   border: none;
   font-weight: 500;
+  padding: 5px;
 }
 #modalContent{
   border-radius: 10px;
