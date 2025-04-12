@@ -153,3 +153,19 @@ ul .additional_list {
 button {
     margin: 10px;
 }
+
+
+/*style fore js button*/
+
+.jsbtn{
+  border-color:black  ;
+  border-radius: 10px;
+  background-color:#FB5607 ;
+  color: white;
+  opacity: 70%;
+}
+#modalContent{
+  border-radius: 10px;
+  border-color: #FB5607;
+  background-color: #FB5607;
+}
