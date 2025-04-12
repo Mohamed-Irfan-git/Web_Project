@@ -61,7 +61,7 @@ ul .additional_list {
     padding: 10px 0;
 }  
 .additional_list{
-  justify-content: center;
+  text-align: justify;
 }
 
 .additional {

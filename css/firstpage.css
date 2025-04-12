@@ -26,13 +26,15 @@ section .container {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: url(../assetes/cover.jpeg);
+    background: url(../assetes/Desktop\ -\ 21.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    opacity: 1;
+    
+    
 }
+
 
 /* Left Section Styling */
 section .container .left {
@@ -42,14 +44,19 @@ section .container .left {
     align-items: flex-start;
     text-align: justify;
     padding: 80px;
-    background-color: #fff;
-    opacity: 0.9;
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    backdrop-filter:blur(8px);
+    opacity: 1;
+    border: 1px solid white;
+    border-radius: 30px;
 }
 
 /* Heading and Paragraph in Left Section */
 section .container .left h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    background-color:transparent;
 }
 
 section .container .left p {
@@ -57,6 +64,9 @@ section .container .left p {
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color:transparent;
+    font-family: 'Inter', sans-serif;
+
 }
 
 section .container .left button {
@@ -72,7 +82,15 @@ section .container .left span {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1.2em;
+    background-color:transparent;
 }
+
+section .container .left span a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
 
 /* Search Bar Styling */
 .Search {
