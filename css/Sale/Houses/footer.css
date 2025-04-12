@@ -1,0 +1,144 @@
+/* Footer Styles */
+.footer {
+    background: #080a3c; 
+    color: white;
+    padding: 40px 0;
+    padding-bottom: 0;
+    text-align: center; 
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    background: none; 
+}
+
+.footer-section {
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: #ff6600; 
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section p {
+    padding-top: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6600; /* Orange hover effect */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+    background: #080a3c; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    bottom: 0%;
+}
+
+/* Fix white box issue */
+.footer-container * {
+    background: none !important;
+}
+
+.footer-bottom * {
+    background: #080a3c !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 80%; /* Adjust section width for medium screens */
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        width: 90%; /* Adjust section width for small screens */
+        padding: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        width: 100%; /* Full width for mobile screens */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .social-icons a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
