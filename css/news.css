@@ -1,94 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
+
 .grid-container1 {
     display: grid;
     grid-template-columns: 75% 25%;
     gap: 0px;
     background-color: transparent;
     padding: 110px 20px 100px 20px;
-  }
+}
 
-  .grid-container1 div {
+.grid-container1 div {
     background-color: transparent;
     text-align: center;
     padding: 10px;
     font-size: 20px;
-  }
+}
 
-  .grid-container1 img {
+.grid-container1 img {
     width: 100%;
     margin-left: 0;
     border-radius: 10px;
-  }
+}
 
-                                      /* section2 */
-  .grid-container2 {
+/* section2 */
+.grid-container2 {
     display: grid;
     grid-template-columns: 25% 75%;
     gap: 0px;
     background-color: transparent;
     padding: 100px 20px 100px 20px;
-  }
-  .grid-container2 div {
+}
+
+.grid-container2 div {
     background-color: transparent;
     text-align: center;
     padding: 10px;
     font-size: 20px;
-  }
+}
 
-  .grid-container2 img {
+.grid-container2 img {
     width: 100%;
     margin-left: 0;
     border-radius: 10px;
-  }
+}
 
-                                  /* section 3 */
-  .grid-container3 {
+/* section 3 */
+.grid-container3 {
     display: grid;
     grid-template-columns: 75% 25%;
     gap: 0px;
     background-color: transparent;
     padding: 100px 20px 100px 20px;
-  }
-  .grid-container3 div {
+}
+
+.grid-container3 div {
     background-color: transparent;
     text-align: center;
     padding: 10px;
     font-size: 20px;
-  }
+}
 
-  .grid-container3 img {
+.grid-container3 img {
     width: 100%;
     margin-left: 0;
     border-radius: 10px;
-  }
-                                  /* section 4 */
-  .grid-container4 {
+}
+
+/* section 4 */
+.grid-container4 {
     display: grid;
     grid-template-columns: 25% 75%;
     gap: 0px;
     background-color: transparent;
     padding: 100px 20px 100px 20px;
-  }
-  .grid-container4 div {
+}
+
+.grid-container4 div {
     background-color: transparent;
     text-align: center;
     padding: 10px;
     font-size: 20px;
-  }
+}
 
-  .grid-container4 img {
+.grid-container4 img {
     width: 100%;
     margin-left: 0;
     border-radius: 10px;
-  }
-
-
-
-
-
-
-
-
+}
