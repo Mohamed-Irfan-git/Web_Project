@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .about-container{
@@ -15,10 +16,9 @@
   width: 100%;
   text-align: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 100px;
   padding: 10px;
   margin-bottom: 60px;
-  background-color: white;
 }
 
 .about-container h1{
@@ -26,12 +26,23 @@
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
 }
+
 .about-container p{
-  font-size: 15px;
-  margin-bottom: 20px;
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.about-container p span{
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 600;
   color: #080a3c;
+  font-family: 'Poppins', sans-serif;
   max-width: 800px;
+  text-align: left;
 }
 .img-about{
   width: 100%;

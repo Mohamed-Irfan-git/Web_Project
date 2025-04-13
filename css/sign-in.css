@@ -106,3 +106,11 @@
     display: inline-block;
     margin-right: 15px;
 }
+
+.error{
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
