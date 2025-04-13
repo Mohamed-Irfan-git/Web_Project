@@ -7,16 +7,24 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
     
 }
+html {
+    scroll-behavior: smooth;
+}
 
-/* Section Styling */
+
+
+
 section {
     margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
 }
 
 /* Container Styling */
@@ -26,12 +34,15 @@ section .container {
     justify-content: center;
     align-items: center;
     background:url(../assetes/front.jpg);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
+    transition: 0.5s ease-in-out;
+    filter: blur(0px);  
+
    
     
 }
