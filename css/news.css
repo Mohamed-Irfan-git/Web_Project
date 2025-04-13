@@ -16,11 +16,18 @@
     padding: 110px 20px 100px 20px;
 }
 
-.grid-container1 div {
+.grid-container1 div h3{
     background-color: transparent;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
+}
+.grid-container1 div p{
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .grid-container1 img {
@@ -38,11 +45,19 @@
     padding: 100px 20px 100px 20px;
 }
 
-.grid-container2 div {
+.grid-container2 div h3 {
     background-color: transparent;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.grid-container2 div p{
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .grid-container2 img {
@@ -60,11 +75,18 @@
     padding: 100px 20px 100px 20px;
 }
 
-.grid-container3 div {
+.grid-container3 div h3 {
+   background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.grid-container3 div p{
     background-color: transparent;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .grid-container3 img {
@@ -82,11 +104,18 @@
     padding: 100px 20px 100px 20px;
 }
 
-.grid-container4 div {
+.grid-container4 div h3 {
     background-color: transparent;
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
+}
+.grid-container4 div p{
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .grid-container4 img {
