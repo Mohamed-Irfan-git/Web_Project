@@ -63,7 +63,7 @@ ul .additional_list {
 }
 
 ul .additional_list {
-  padding: 10px 0;
+    padding: 10px 0;
 }  
 .additional_list{
   text-align: justify;
@@ -200,4 +200,8 @@ button {
   border: none;
   font-weight: 500;
   padding: 5px;
+}
+#moreContent{
+  border-radius: 10px;
+  color: #FF6500;
 }
