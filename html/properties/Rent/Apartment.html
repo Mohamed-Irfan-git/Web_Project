@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartments House</title>
-    <link rel="stylesheet" href="../../../css/nav.css">
-    <link rel="stylesheet" href="../../../css/Rent/Housees.css">
     <title>Rent House</title>
     <link rel="stylesheet" href="../../../css/nav.css">
     <link rel="stylesheet" href="../../../css/Rent/Apartment.css">
     <link rel="stylesheet" href="../../../css/footer.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -27,16 +28,16 @@
                     <div class="submenu">
                         <button class="submenu-btn">For Rent</button>
                         <ul class="submenu-list">
-                            <li><a href="Housees.html">Houses</a></li>
-                            <li><a href="Apartment.html">Apartments</a></li>
-                            <li><a href="commercial.html">Commercial Properties</a></li>
+                            <li><a href="../Rent/Housees.html">Houses</a></li>
+                            <li><a href="../Rent/Apartment.html">Apartments</a></li>
+                            <li><a href="../Rent/commercial.html">Commercial Properties</a></li>
                         </ul>
                     </div>
                     <div class="submenu">
                         <button class="submenu-btn">For Sale</button>
                         <ul class="submenu-list">
                             <li><a href="../Sale/Houses.html">Houses</a></li>
-                            <li><a href="..//Sale/Apartment.html">Apartments</a></li>
+                            <li><a href="../Sale/Apartment.html">Apartments</a></li>
                             <li><a href="../Sale/commercial.html">Commercial Properties</a></li>
                         </ul>
                     </div>
@@ -59,64 +60,216 @@
 
     <div class="house-container">
         <div class="image">
-            <img src="../../../assetes/house rent.jpg" alt="">
+            <img src="../../../assetes/amrtment1.jpeg" alt="">
         </div>
-        <div class="pramoda_image">
-            
-            <img src="../../../assetes/Pramoda_Apartment 5.jpg" alt="pramoda_Apartment">
-           
-        </div>
-        
         <div class="search-bar">
             <input type="text" placeholder="Type price/Location">
             <button type="submit">Search</button>
         </div>
 
         <div class="house-details">
-            <h1>Show case house Properties</h1>
+             <h1>Show Case Apartment Properties</h1>
             <div class="card-container">
-                <div class="house-card">
-                    <img src="../../../assetes/house5.jpg" alt="House 1">
-                    <h2>House 1</h2>
-                    <p>Location: Colombo</p>
-                    <p class="rs">Price: $500/month</p>
-        <div class="text-overlay">
-           <h1>Find Your Dream Home </h1> 
-        </div>
-
-        <div class="house-details">
-            <h1>Show case Apartment  Properties</h1>
-            <div class="card-container">
+            
                 <div class="house-card">
                     <img src="../../../assetes/Pramoda_Apartment 1.jpg" alt="House 1">
-                    <h2>Apartment 1</h2>
-                    <p>Location: Matara</p>
-                    <p class="rs">Price: $1500/month</p>
-                    <button class="view-details">View Details</button>
+                    <span>$500/per month</span>
+                    <div class="Location">
+                        <h3>Colombo</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                    </div>
+                    <div class="house-info">
+                        <div class="house-contains">
+                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            <p>3 Bed</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-bath" aria-hidden="true"></i>
+                            <p>2 Bath</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <p>Electricity</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="house_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Voluptas dolor dolorum quis eveniet numquam debitis.
+                    </div>
+                    <div class="card-btn">
+                        <button class="view-details">VIEW DETAILS</button>
+                        <button class="rent-btn">RENT NOW</button>
+                    </div>
 
                 </div>
+
                 <div class="house-card">
-                    <img src="../../../assetes/house2.jpeg" alt="House 1">
-                    <h2>House 1</h2>
-                    <p>Location: Colombo</p>
-                    <p class="rs">Price: $500/month</p>
-                    <img src="../../../assetes/Pramoda_Apartment 6.jpg" alt="House 1">
-                    <h2>Apartment 2</h2>
-                    <p>Location: Mathale</p>
-                    <p class="rs">Price: $700/month</p>
-                    <button class="view-details">View Details</button>
+                    <img src="../../../assetes/Pramoda_Apartment 2.jpg" alt="House 1">
+                    <span>$500/per month</span>
+                    <div class="Location">
+                        <h3>Colombo</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                    </div>
+                    <div class="house-info">
+                        <div class="house-contains">
+                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            <p>3 Bed</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-bath" aria-hidden="true"></i>
+                            <p>2 Bath</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <p>Electricity</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="house_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Voluptas dolor dolorum quis eveniet numquam debitis.
+                    </div>
+                    <div class="card-btn">
+                        <button class="view-details">VIEW DETAILS</button>
+                        <button class="rent-btn">RENT NOW</button>
+                    </div>
 
                 </div>
+
+                
                 <div class="house-card">
+                    <img src="../../../assetes/Pramoda_Apartment 3.jpg" alt="House 1">
+                    <span>$500/per month</span>
+                    <div class="Location">
+                        <h3>Colombo</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                    </div>
+                    <div class="house-info">
+                        <div class="house-contains">
+                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            <p>3 Bed</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-bath" aria-hidden="true"></i>
+                            <p>2 Bath</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <p>Electricity</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="house_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Voluptas dolor dolorum quis eveniet numquam debitis.
+                    </div>
+                    <div class="card-btn">
+                        <button class="view-details">VIEW DETAILS</button>
+                        <button class="rent-btn">RENT NOW</button>
+                    </div>
+
+                </div>
+
+                <div class="house-card">
+                    <img src="../../../assetes/Pramoda_Apartment 4.jpg" alt="House 1">
+                    <span>$500/per month</span>
+                    <div class="Location">
+                        <h3>Colombo</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                    </div>
+                    <div class="house-info">
+                        <div class="house-contains">
+                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            <p>3 Bed</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-bath" aria-hidden="true"></i>
+                            <p>2 Bath</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <p>Electricity</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="house_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Voluptas dolor dolorum quis eveniet numquam debitis.
+                    </div>
+                    <div class="card-btn">
+                        <button class="view-details">VIEW DETAILS</button>
+                        <button class="rent-btn">RENT NOW</button>
+                    </div>
+
+                </div>
+
+
+                <div class="house-card">
+                    <img src="../../../assetes/Pramoda_Apartment 5.jpg" alt="House 1">
+                    <span>$500/per month</span>
+                    <div class="Location">
+                        <h3>Colombo</h3>
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                    </div>
+                    <div class="house-info">
+                        <div class="house-contains">
+                            <i class="fa fa-bed" aria-hidden="true"></i>
+                            <p>3 Bed</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-bath" aria-hidden="true"></i>
+                            <p>2 Bath</p>
+                        </div>
+
+                        <div class="house-contains">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <p>Electricity</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="house_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Voluptas dolor dolorum quis eveniet numquam debitis.
+                    </div>
+                    <div class="card-btn">
+                        <button class="view-details">VIEW DETAILS</button>
+                        <button class="rent-btn">RENT NOW</button>
+                    </div>
+
+                </div>
+
+
+                
+                <!-- <div class="house-card">
                     <img src="../../../assetes/house4.jpg" alt="House 1">
                     <h2>House 1</h2>
                     <p>Location: Colombo</p>
                     <p class="rs">Price: $500/month</p>
-
-                    <img src="../../../assetes/Pramoda_Apartment 4.jpg" alt="House 1">
-                    <h2>Apartment 3</h2>
-                    <p>Location: Colombo</p>
-                    <p class="rs">Price: $800/month</p>
                     <button class="view-details">View Details</button>
 
                 </div>
@@ -125,10 +278,6 @@
                     <h2>House 1</h2>
                     <p>Location: Colombo</p>
                     <p class="rs">Price: $500/month</p>
-                    <img src="../../../assetes/Pramoda_Apartment 8.jpg" alt="House 1">
-                    <h2>Apartment 4</h2>
-                    <p>Location: Nuwara</p>
-                    <p class="rs">Price: $600/month</p>
                     <button class="view-details">View Details</button>
 
                 </div>
@@ -136,46 +285,10 @@
                     <img src="../../../assetes/house6.jpg" alt="House 1">
                     <h2>House 1</h2>
                     <p>Location: Colombo</p>
-                    <img src="../../../assetes/Pramoda_Apartment 7.jpg" alt="House 1">
-                    <h2>Apartment 5</h2>
-                    <p>Location: Galle</p>
                     <p class="rs">Price: $500/month</p>
                     <button class="view-details">View Details</button>
 
-                </div>
-
-                <div class="house-card">
-                    <img src="../../../assetes/Pramoda_Apartment 2.jpg" alt="House 1">
-                    <h2>Apartment 6</h2>
-                    <p>Location: Maharagama</p>
-                    <p class="rs">Price: $400/month</p>
-                    <button class="view-details">View Details</button>
-
-                </div>
-                <div class="house-card">
-                    <img src="../../../assetes/Pramoda_Apartment 3.jpg" alt="House 1">
-                    <h2>Apartment 7</h2>
-                    <p>Location: Kalutara</p>
-                    <p class="rs">Price: $800/month</p>
-                    <button class="view-details">View Details</button>
-
-                </div>
-                <div class="house-card">
-                    <img src="../../../assetes/Pramoda_Apartment 6.jpg" alt="House 1">
-                    <h2>Apartment 8</h2>
-                    <p>Location:Nugegoda</p>
-                    <p class="rs">Price: $200/month</p>
-                    <button class="view-details">View Details</button>
-
-                </div>
-                <div class="house-card">
-                    <img src="../../../assetes/Pramoda_Apartment 5.jpg" alt="House 1">
-                    <h2>Apartment 9</h2>
-                    <p>Location: Gampaha</p>
-                    <p class="rs">Price: $700/month</p>
-                    <button class="view-details">View Details</button>
-
-                </div>
+                </div> -->
             </div>
 
 
@@ -227,6 +340,8 @@
     </footer>
 
     <script src="../javascript/nav.js"></script>
+
+
 </body>
 
 </html>
