@@ -62,16 +62,18 @@
 
 
     <div class="container">
-        <form action="" class="sign-inn">
+        <form action="" class="sign-inn" id="myForm">
             <h1>Welcome Back!</h1>
             <div class="groupby-input">
                 <label for="">Email Address</label>
-                <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+                <input type="text" name="email" id="email" placeholder="Enter your email address">
+                <div class="error" id="errorEmail"></div>
             </div>
 
             <div class="groupby-input">
                 <label for="">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                <input type="password" name="password" id="password" placeholder="Enter your password" >
+                <div class="error" id="errorPassword"></div>
             </div>
 
             <button type="submit">Sign In</button>
@@ -119,6 +121,7 @@
     </footer>
 
     <script src="../javascript/nav.js"></script>
+    <script src="../javascript/signin.js"></script>
 
 
 </body>
