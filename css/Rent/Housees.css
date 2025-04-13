@@ -159,7 +159,7 @@
     align-items: space-between;
     justify-content: space-between;
     flex-direction: row;
-    gap: 120px;
+    gap: 80px;
     margin-top: 20px;
 }
  .house-card .Location h3 {
@@ -226,7 +226,7 @@
 }
 
 .card-btn .rent-btn{
-    width: 150px;
+    width: 200px;
     height: 40px;
     background-color: #080a3c;
     color: #fff;

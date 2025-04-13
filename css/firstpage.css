@@ -152,17 +152,8 @@ section .container .left span a {
     align-items: center;
 }
 
-.Search button:hover {
-    background: linear-gradient(135deg, #dde71e, #b9d404);
-    color: #080a3c;
-    transform: scale(1.1);
-}
 
-.Search button:active {
-    transform: scale(0.95);
-}
 
-/* Dropdown Select Styling */
 .Search select {
     padding: 5px 10px;
     margin-top: 0;
@@ -181,9 +172,7 @@ section .container .left span a {
     align-items: center;
 }
 
-.Search select:hover {
-    border-color: #FF6500;
-}
+
 
 .Search select option {
     font-size: 1em;
@@ -214,47 +203,80 @@ section .container .left span a {
 .latest-properties .properties .property {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
     margin: 20px;
-    width: 250px;
-    height: 350px;
+    width: 400px;
+    height: 430px;
     background-color: white;
-    border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     transition: transform 0.5s;
     transition: box-shadow 0.5s;
+    gap: 10px;
 }
 
 .latest-properties .properties .property img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .latest-properties .properties .property h2  {
     color: #080a3c;
     background: white;
     font-size: 1.2em;
-    margin-top: 10px;
 }
 
 .latest-properties .properties .property p {
     color: #080a3c;
-    background: white;
-    font-size: 1em;
-    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.latest-properties .properties .property .btn {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-style: none;
+}
+.latest-properties .properties .property .btn .view{
+    width: 180px;
+    height: 40px;
+    background-color: #FF6500;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.latest-properties .properties .property:hover {
+.latest-properties .properties .property .btn .type{
+    width: 180px;
+    height: 40px;
+    background-color: #080a3c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .latest-properties .properties .property:hover {
     transform: scale(1.1) !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;
     transition: 0.5s ease !important;
-}
+} */
 
 /* Latest News Section Styling */
 .latest-news {
@@ -270,6 +292,8 @@ section .container .left span a {
     align-items: center;
     display: flex;
     font-size: 2.5em;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 
@@ -309,12 +333,27 @@ section .container .left span a {
 
 .news-details h2 {
     margin: 0;
+    color: #080a3c;
     font-size: 1.8em;
 }
 
 .news-details p {
     margin-top: 10px;
-    font-size: 1em;
+    font-size: 16px;
+    font-weight: 600;
+}
+.news-details button{
+    width: 200px;
+    height: 40px;
+    background-color: #FF6500;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
