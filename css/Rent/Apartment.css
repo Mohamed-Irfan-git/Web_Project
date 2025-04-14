@@ -16,8 +16,8 @@
     gap: 15px;
     padding: 20px 0;
     flex-direction: column;
-
 }
+
 .house-container .image {
     position: relative; 
     width: 100%;
@@ -25,17 +25,14 @@
     overflow: hidden;
 }
 
-
 .house-container .image img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    overflow: hidden;
     position: absolute;
     top: -50px;
     left: 0;
-
 }
 
 .house-container .search-bar {
@@ -56,14 +53,12 @@
     width: 500px;
     height: 50px;
     padding: 10px;
-    border-radius: 5px;
     border: 2px solid #FF6500;
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
     background-color: transparent;
     color: #FF6500;
-    text-decoration-color: #FF6500;
 }
 
 .house-container .search-bar input::placeholder {
@@ -82,8 +77,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-
 
 .house-details {
     margin-top: -100px;
@@ -107,9 +100,7 @@
     justify-content: left;
     width: 100%;
     padding-left: 40px;
-
 }
-
 
 .house-details .card-container {
     display: flex;
@@ -121,60 +112,60 @@
     background-color: #f9f9f9;
     box-sizing: border-box;
 }
+
 .house-details .card-container .house-card {
     position: relative;
     flex: 0 0 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
-    box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 550px;
+    height: 600px;
     padding: 10px;
     margin: 5px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
-
 
 .house-details .card-container .house-card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-.house-details .card-container .house-card span {
-  content: "";
-  position: absolute;
-  top: 290px;
-  left: 30px;
-  background-color: #ff6600;
-  color: #fff;
-  padding: 5px 10px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
 
+.house-details .card-container .house-card span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 6px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    z-index: 2;
 }
+
 .house-details .card-container .house-card .Location {
     display: flex;
-    align-items: space-between;
     justify-content: space-between;
     flex-direction: row;
-    gap: 120px;
+    gap: 20px;
     margin-top: 20px;
 }
- .house-card .Location h3 {
+
+.house-card .Location h3 {
     font-size: 20px;
     color: #080a3c;
-    margin-right: 100px;
 }
 
- .house-info {
+.house-info {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
     justify-content: space-between;
     gap: 40px;
 }
+
 .house-info .house-contains {
     display: flex;
     flex-direction: row;
@@ -182,79 +173,74 @@
     color: #080a3c;
     gap: 10px;
     font-weight: 500;
-
 }
 
-.house_description{
+.house_description {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     margin-top: 10px;
     color: #080a3c;
     font-size: 15px;
     font-weight: 500;
 }
-.house-contains .fa{
+
+.house-contains .fa {
     color: #FF6500;
 }
-.house-contains p{
-    color:#080a3c;
+
+.house-contains p {
+    color: #080a3c;
     font-size: 15px;
     font-weight: 500;
 }
 
 .card-btn {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     gap: 100px;
     margin-top: 10px;
 }
 
-.card-btn .view-details{
+.card-btn .view-details,
+.card-btn .rent-btn {
     width: 200px;
     height: 40px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn .view-details {
     background-color: #FF6500;
     color: #fff;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 5px;
 }
 
-.card-btn .rent-btn{
-    width: 200px;
-    height: 40px;
+.card-btn .rent-btn {
     background-color: #080a3c;
     color: #fff;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 5px;
 }
 
+/* Media Queries */
 @media (max-width: 1024px) {
     .house-details .card-container .house-card {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
-    .house-details h1{
+
+    .house-details h1 {
         font-size: 30px;
         margin-bottom: 20px;
-        font-weight: 700;
     }
+
     .house-container .search-bar input {
         width: 400px;
-        
     }
+
     .house-container .search-bar button {
         width: 80px;
     }
-
 }
 
 @media (max-width: 600px) {
@@ -262,17 +248,32 @@
         flex: 1 1 100%;
         max-width: 100%;
     }
-    .house-details h1{
+
+    .house-details h1 {
         font-size: 25px;
         margin-bottom: 20px;
-        font-weight: 700;
     }
+
     .house-container .search-bar input {
         width: 300px;
     }
+
     .house-container .search-bar button {
         width: 70px;
     }
+
+    .house-details .card-container .house-card span {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .card-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-btn .view-details,
+    .card-btn .rent-btn {
+        width: 100%;
+    }
 }
-  
-  

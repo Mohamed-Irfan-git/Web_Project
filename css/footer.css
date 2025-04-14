@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
     background: none; 
 }
@@ -97,7 +97,7 @@
     }
 
     .footer-section {
-        width: 80%; /* Adjust section width for medium screens */
+        width: 100%; /* Adjust section width for medium screens */
         margin-bottom: 20px;
     }
 
@@ -108,8 +108,13 @@
 }
 
 @media (max-width: 768px) {
+    .footer{
+        background: #080a3c;
+        width: 100%;
+        white-space: nowrap;
+    }
     .footer-section {
-        width: 90%; /* Adjust section width for small screens */
+        width: 100%; /* Adjust section width for small screens */
         padding: 15px;
     }
 
@@ -125,6 +130,11 @@
 }
 
 @media (max-width: 480px) {
+    .footer{
+        background: #080a3c;
+        width: 100%;
+        white-space: nowrap;
+    }
     .footer-section {
         width: 100%; /* Full width for mobile screens */
         padding: 10px;
