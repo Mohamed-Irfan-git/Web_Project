@@ -20,13 +20,14 @@ html {
   align-items: center;
   flex-direction: column;
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 90px;
 
 
 
 }
 .listing-options h2{
   margin:20px;
+  color: #FB5607;
 
 }
 
@@ -36,12 +37,21 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  
 
 }
 
 .servicet td {
   border: 1px solid #ddd;
   padding: 8px;
+  font-weight: 500;
+  color: #080a3c;
 }
 
 
@@ -50,9 +60,17 @@ html {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #FB5607  ;
+  background-color: #080a3c ;
   color: white;
 }
+
+.listing-options h2 hr{  
+  width: 100%;
+  height: 2px;
+  background-color: #FB5607;
+  border: none;
+
+} 
 
 
 /*additional service */
@@ -136,6 +154,7 @@ ul .additional_list {
    #serviceModal {
     display: none;
     position: fixed;
+    font-weight: 600;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -143,6 +162,7 @@ ul .additional_list {
     background-color: white;
     border: 2px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #080a3c;
     z-index: 1000;
 }
 #overlay {
@@ -161,7 +181,7 @@ button {
 }
 
 /* button style*/ 
-.jsbtn {
+/* .jsbtn {
   position: relative;
   font-size: 8px;
   text-transform: uppercase;
@@ -169,19 +189,19 @@ button {
   padding: 1em 2.5em;
   display: inline-block;
   cursor: pointer;
-  border-radius: 6em;
   transition: all 0.2s;
   border: none;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 600;
   color: black;
   background-color: #FB5607;
   
-}
+} */
 
 .jsbtn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 
@@ -192,12 +212,11 @@ button {
   justify-content: right;
   align-items: center;
   border-color:black  ;
-  border-radius: 10px;
-  color: #080a3c;
-  background-color: #FF6500;
-  opacity: 70%;
+  color:white;
+  background-color: #FB5607;
   padding: 5px;
   border: none;
-  font-weight: 500;
+  font-weight: 600;
   padding: 5px;
+  
 }
