@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../css/nav.css">
     <link rel="stylesheet" href="../../../css/Sale/commercial.css">
     <link rel="stylesheet" href="../../../css/footer.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="icon" type="image/png" href="../../../assetes/Main.png " sizes="16x16">
@@ -49,7 +49,7 @@
             <li><a href="../../faq.html">FAQ</a></li>
             <li><a href="../../contact.html">Contacts</a></li>
             <li><a class="sign-in" href="../../signin.html">Sign In</a></li>
-            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+            <li><a class="sign-up" href="../../signup.html">Sign Up</a></li>
         </ul>
 
         <div class="hamburger" id="hamburger">
@@ -64,14 +64,50 @@
             <img src="../../../assetes/Nip_Sale_Ap1.jpg" alt="">
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Type price/Location">
+            <input type="text" placeholder="Location (e.g., Kandy, Colombo)">
+
+            <select id="minPrice">
+                <option value="">Min Price</option>
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+                <option value="400">$400</option>
+                <option value="500">$500</option>
+            </select>
+
+            <select id="maxPrice">
+                <option value="">Max Price</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+                <option value="400">$400</option>
+                <option value="500">$500</option>
+                <option value="600">$600</option>
+            </select>
+
+            <select id="bedrooms">
+                <option value="">Bedrooms</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+            </select>
+
+            <select id="bathrooms">
+                <option value="">Bathrooms</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+            </select>
+
             <button type="submit">Search</button>
+
         </div>
 
         <div class="house-details">
-             <h1>Show Case Apartment Properties</h1>
+            <h1>Show Case Apartment Properties</h1>
             <div class="card-container">
-            
+
                 <div class="house-card">
                     <img src="../../../assetes/Nip_Sale_Ap2.jpg" alt="House 1">
                     <span>$500/per month</span>
@@ -100,7 +136,7 @@
 
                     </div>
                     <div class="house_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Voluptas dolor dolorum quis eveniet numquam debitis.
                     </div>
                     <div class="card-btn">
@@ -138,7 +174,7 @@
 
                     </div>
                     <div class="house_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Voluptas dolor dolorum quis eveniet numquam debitis.
                     </div>
                     <div class="card-btn">
@@ -148,7 +184,7 @@
 
                 </div>
 
-                
+
                 <div class="house-card">
                     <img src="../../../assetes/Nip_Sale_Ap4.jpg" alt="House 1">
                     <span>$500/per month</span>
@@ -177,7 +213,7 @@
 
                     </div>
                     <div class="house_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Voluptas dolor dolorum quis eveniet numquam debitis.
                     </div>
                     <div class="card-btn">
@@ -215,7 +251,7 @@
 
                     </div>
                     <div class="house_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Voluptas dolor dolorum quis eveniet numquam debitis.
                     </div>
                     <div class="card-btn">
@@ -254,7 +290,7 @@
 
                     </div>
                     <div class="house_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. Voluptas dolor dolorum quis eveniet numquam debitis.
                     </div>
                     <div class="card-btn">
@@ -265,7 +301,7 @@
                 </div>
 
 
-                
+
                 <!-- <div class="house-card">
                     <img src="../../../assetes/house4.jpg" alt="House 1">
                     <h2>House 1</h2>

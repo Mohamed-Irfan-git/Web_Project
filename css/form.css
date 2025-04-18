@@ -46,6 +46,12 @@
     display: flex;
     gap: 10px;
 }
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}
 
 input, select, textarea {
     width: 100%;

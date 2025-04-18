@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../../../css/nav.css">
     <link rel="stylesheet" href="../../../css/Rent/Apartment.css">
     <link rel="stylesheet" href="../../../css/footer.css">
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    
+
     <link rel="icon" type="image/png" href="../../../assetes/Main.png " sizes="16x16">
     <title>Haven Nest Rent Property Apartment</title>
 </head>
@@ -52,7 +52,7 @@
             <li><a href="../../faq.html">FAQ</a></li>
             <li><a href="../../contact.html">Contacts</a></li>
             <li><a class="sign-in" href="../../signin.html">Sign In</a></li>
-            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+            <li><a class="sign-up" href="../../signup.html">Sign Up</a></li>
         </ul>
 
         <div class="hamburger" id="hamburger">
@@ -67,204 +67,240 @@
             <img src="../../../assetes/amrtment1.jpeg" alt="">
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Type price/Location">
-            <button type="submit">Search</button>
-        </div>
+                <input type="text" placeholder="Location (e.g., Kandy, Colombo)">
 
-        <div class="house-details">
-            <h1>Show Case Apartment Properties</h1>
-            <div class="card-container">
-            
-                <div class="house-card">
-                    <img src="../../../assetes/Apar1.jpeg" alt="House 1">
-                    <span>$380/per month</span>
-                    <div class="Location">
-                        <h3>Mathale</h3>
-                        <p>⭐⭐⭐⭐⭐</p>
+                <select id="minPrice">
+                    <option value="">Min Price</option>
+                    <option value="100">$100</option>
+                    <option value="200">$200</option>
+                    <option value="300">$300</option>
+                    <option value="400">$400</option>
+                    <option value="500">$500</option>
+                </select>
 
-                    </div>
-                    <div class="house-info">
-                        <div class="house-contains">
-                            <i class="fa fa-bed" aria-hidden="true"></i>
-                            <p>3 Bed</p>
+                <select id="maxPrice">
+                    <option value="">Max Price</option>
+                    <option value="200">$200</option>
+                    <option value="300">$300</option>
+                    <option value="400">$400</option>
+                    <option value="500">$500</option>
+                    <option value="600">$600</option>
+                </select>
+
+                <select id="bedrooms">
+                    <option value="">Bedrooms</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="5">5+</option>
+                </select>
+
+                <select id="bathrooms">
+                    <option value="">Bathrooms</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </div>
+
+
+            <div class="house-details">
+                <h1>Show Case Apartment Properties</h1>
+                <div class="card-container">
+
+                    <div class="house-card">
+                        <img src="../../../assetes/Apar1.jpeg" alt="House 1">
+                        <span>$380/per month</span>
+                        <div class="Location">
+                            <h3>Matale</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+
+                        </div>
+                        <div class="house-info">
+                            <div class="house-contains">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <p>3 Bed</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                <p>2 Bath</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <p>Electricity</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="house_description">
+                            Near the main road, close to the market and schools.
+                        </div>
+                        <div class="card-btn">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="rent-btn">RENT NOW</button>
                         </div>
 
-                        <div class="house-contains">
-                            <i class="fa fa-bath" aria-hidden="true"></i>
-                            <p>2 Bath</p>
+                    </div>
+
+                    <div class="house-card">
+                        <img src="../../../assetes/Apar2.jpg" alt="House 1">
+                        <span>$500/per month</span>
+                        <div class="Location">
+                            <h3>Colombo</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+
+                        </div>
+                        <div class="house-info">
+                            <div class="house-contains">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <p>4 Bed</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                <p>3 Bath</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <p>Electricity</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="house_description">
+                            Near the school and market, easy access to public transport.
+                        </div>
+                        <div class="card-btn">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="rent-btn">RENT NOW</button>
                         </div>
 
-                        <div class="house-contains">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                            <p>Electricity</p>
+                    </div>
+
+
+                    <div class="house-card">
+                        <img src="../../../assetes/Apar3.jpg" alt="House 1">
+                        <span>$420/per month</span>
+                        <div class="Location">
+                            <h3>NuwaraEliya</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+
+                        </div>
+                        <div class="house-info">
+                            <div class="house-contains">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <p>3 Bed</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                <p>1 Bath</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <p>Electricity</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="house_description">
+                            Near the gregory lake, beautiful view and peaceful environment.
+                        </div>
+                        <div class="card-btn">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="rent-btn">RENT NOW</button>
                         </div>
 
-
-
-                    </div>
-                    <div class="house_description">
-                        Near the main road, close to the market and schools.
-                    </div>
-                    <div class="card-btn">
-                        <button class="view-details">VIEW DETAILS</button>
-                        <button class="rent-btn">RENT NOW</button>
                     </div>
 
-                </div>
+                    <div class="house-card">
+                        <img src="../../../assetes/Apar4.webp" alt="House 1">
+                        <span>$500/per month</span>
+                        <div class="Location">
+                            <h3>Kandy</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
 
-                <div class="house-card">
-                    <img src="../../../assetes/Apar2.jpg" alt="House 1">
-                    <span>$500/per month</span>
-                    <div class="Location">
-                        <h3>Colombo</h3>
-                        <p>⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div class="house-info">
+                            <div class="house-contains">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <p>4 Bed</p>
+                            </div>
 
-                    </div>
-                    <div class="house-info">
-                        <div class="house-contains">
-                            <i class="fa fa-bed" aria-hidden="true"></i>
-                            <p>4 Bed</p>
+                            <div class="house-contains">
+                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                <p>3 Bath</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <p>Electricity</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="house_description">
+                            Near the temple of tooth, close to the city center.
+                        </div>
+                        <div class="card-btn">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="rent-btn">RENT NOW</button>
                         </div>
 
-                        <div class="house-contains">
-                            <i class="fa fa-bath" aria-hidden="true"></i>
-                            <p>3 Bath</p>
+                    </div>
+
+
+                    <div class="house-card">
+                        <img src="../../../assetes/Apar5.webp" alt="House 1">
+                        <span>$400/per month</span>
+                        <div class="Location">
+                            <h3>Anuradhapura</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+
+                        </div>
+                        <div class="house-info">
+                            <div class="house-contains">
+                                <i class="fa fa-bed" aria-hidden="true"></i>
+                                <p>3 Bed</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-bath" aria-hidden="true"></i>
+                                <p>2 Bath</p>
+                            </div>
+
+                            <div class="house-contains">
+                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                <p>Electricity</p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="house_description">
+                            Near the ancient ruins, rich in history and culture, easy access to public transport.
+                        </div>
+                        <div class="card-btn">
+                            <button class="view-details">VIEW DETAILS</button>
+                            <button class="rent-btn">RENT NOW</button>
                         </div>
 
-                        <div class="house-contains">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                            <p>Electricity</p>
-                        </div>
-
-
-
-                    </div>
-                    <div class="house_description">
-                        Near the school and market, easy access to public transport.
-                    </div>
-                    <div class="card-btn">
-                        <button class="view-details">VIEW DETAILS</button>
-                        <button class="rent-btn">RENT NOW</button>
                     </div>
 
-                </div>
-
-                
-                <div class="house-card">
-                    <img src="../../../assetes/Apar3.jpg" alt="House 1">
-                    <span>$420/per month</span>
-                    <div class="Location">
-                        <h3>NuwaraEliya</h3>
-                        <p>⭐⭐⭐⭐⭐</p>
-
-                    </div>
-                    <div class="house-info">
-                        <div class="house-contains">
-                            <i class="fa fa-bed" aria-hidden="true"></i>
-                            <p>3 Bed</p>
-                        </div>
-
-                        <div class="house-contains">
-                            <i class="fa fa-bath" aria-hidden="true"></i>
-                            <p>1 Bath</p>
-                        </div>
-
-                        <div class="house-contains">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                            <p>Electricity</p>
-                        </div>
 
 
-
-                    </div>
-                    <div class="house_description">
-                        Near the gregory lake, beautiful view and peaceful environment.
-                    </div>
-                    <div class="card-btn">
-                        <button class="view-details">VIEW DETAILS</button>
-                        <button class="rent-btn">RENT NOW</button>
-                    </div>
-
-                </div>
-
-                <div class="house-card">
-                    <img src="../../../assetes/Apar4.webp" alt="House 1">
-                    <span>$500/per month</span>
-                    <div class="Location">
-                        <h3>Kandy</h3>
-                        <p>⭐⭐⭐⭐⭐</p>
-
-                    </div>
-                    <div class="house-info">
-                        <div class="house-contains">
-                            <i class="fa fa-bed" aria-hidden="true"></i>
-                            <p>4 Bed</p>
-                        </div>
-
-                        <div class="house-contains">
-                            <i class="fa fa-bath" aria-hidden="true"></i>
-                            <p>3 Bath</p>
-                        </div>
-
-                        <div class="house-contains">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                            <p>Electricity</p>
-                        </div>
-
-
-
-                    </div>
-                    <div class="house_description">
-                        Near the temple of tooth, close to the city center. 
-                    </div>
-                    <div class="card-btn">
-                        <button class="view-details">VIEW DETAILS</button>
-                        <button class="rent-btn">RENT NOW</button>
-                    </div>
-
-                </div>
-
-
-                <div class="house-card">
-                    <img src="../../../assetes/Apar5.webp" alt="House 1">
-                    <span>$400/per month</span>
-                    <div class="Location">
-                        <h3>Anuradhapura</h3>
-                        <p>⭐⭐⭐⭐⭐</p>
-
-                    </div>
-                    <div class="house-info">
-                        <div class="house-contains">
-                            <i class="fa fa-bed" aria-hidden="true"></i>
-                            <p>3 Bed</p>
-                        </div>
-
-                        <div class="house-contains">
-                            <i class="fa fa-bath" aria-hidden="true"></i>
-                            <p>2 Bath</p>
-                        </div>
-
-                        <div class="house-contains">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                            <p>Electricity</p>
-                        </div>
-
-
-
-                    </div>
-                    <div class="house_description">
-                        Near the ancient ruins, rich in history and culture, easy access to public transport.
-                    </div>
-                    <div class="card-btn">
-                        <button class="view-details">VIEW DETAILS</button>
-                        <button class="rent-btn">RENT NOW</button>
-                    </div>
-
-                </div>
-
-
-                
-                <!-- <div class="house-card">
+                    <!-- <div class="house-card">
                     <img src="../../../assetes/house4.jpg" alt="House 1">
                     <h2>House 1</h2>
                     <p>Location: Colombo</p>
@@ -288,6 +324,10 @@
                     <button class="view-details">View Details</button>
 
                 </div> -->
+                </div>
+
+
+
             </div>
 
 
@@ -296,49 +336,45 @@
 
 
 
-    </div>
 
 
 
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h2>Haven Nest</h2>
+                    <p>Your trusted partner in finding the perfect home.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
 
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../contact.html">About Us</a></li>
+                        <li><a href="../../properties/Rent/Apartment.html">Properties</a></li>
+                        <li><a href="../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h2>Haven Nest</h2>
-                <p>Your trusted partner in finding the perfect home.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Matara</p>
+                    <p><i class="fas fa-phone"></i> +94 740446949</p>
+                    <p><i class="fas fa-envelope"></i> info@realestate.com</p>
                 </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="../../contact.html">About Us</a></li>
-                    <li><a href="../../properties/Rent/Apartment.html">Properties</a></li>
-                    <li><a href="../../contact.html">Contact</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
             </div>
+        </footer>
 
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Matara</p>
-                <p><i class="fas fa-phone"></i> +94 740446949</p>
-                <p><i class="fas fa-envelope"></i> info@realestate.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="../../../javascript/nav.js"></script>
+        <script src="../../../javascript/nav.js"></script>
 
 
 </body>

@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haven Nest News</title>
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/sign-in.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link rel="icon" type="image/png" href="../assetes/Main.png " sizes="16x16">
 
+    <title>SignUp</title>
 </head>
 
 <body>
+
     <nav class="nav-bar">
         <a class="title" href="index.html">
             Haven Nest
@@ -27,10 +29,9 @@
                     <div class="submenu">
                         <button class="submenu-btn">For Rent</button>
                         <ul class="submenu-list">
-                            <li><a href="../html/properties/Rent/Housees.html">Houses</a></li>
-                            <li><a href="../html/properties/Rent/Apartment.html">Apartments</a></li>
-                            <li><a href="../html/properties/Rent/commercial.html">Commercial Properties</a>
-
+                            <li><a href="./properties/Rent/Housees.html">Houses</a></li>
+                            <li><a href="./properties/Rent/Apartment.html">Apartments</a></li>
+                            <li><a href="./properties/Rent/commercial.html">Commercial Properties</a></li>
                         </ul>
                     </div>
                     <div class="submenu">
@@ -48,7 +49,7 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contacts</a></li>
             <li><a class="sign-in" href="signin.html">Sign In</a></li>
-            <li><a class="sign-up" href="signup.html">Sign Up</a></li>
+            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
         </ul>
 
         <div class="hamburger" id="hamburger">
@@ -58,98 +59,54 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="sign-inn">
+            <h1>Register Now</h1>
 
-    <section>
-        <div class="grid-container1">
-            <div class="item1">
-                <h3>🏠 U.S. Real Estate Market: Surge in Affordable and Luxury Segments</h3>
-                <p>
-                    Realtor.com reports significant price increases in various U.S. ZIP codes from Q1 2024 to Q1
-                    2025.
-                    Sheffield, AL (35660) leads with a 50% rise to $194,900. Luxury markets also see substantial
-                    growth,
-                    with West Palm Beach, FL experiencing an 82.4% increase to $3.1 million.
-
-                </p>
-
+            <div class="groupby-input">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Enter your first name">
+                <div class="error" id="firstNameError"></div>
             </div>
-            <div class="item2">
-                <img src="../assetes/sri.jpg" alt="Real estate image">
+
+            <div class="groupby-input">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Enter your last name">
+                <div class="error" id="lastNameError"></div>
             </div>
+
+            <div class="groupby-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="groupby-input">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password">
+                <div class="error" id="passwordError"></div>
+            </div>
+
+            <div class="groupby-input">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <p>Or sign up with</p>
+            <p>
+                <a href="#">
+                    <img src="../assetes/google.png" alt="Google">
+                    Continue with Google
+                </a>
+            </p>
+
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
         </div>
-    </section>
+    </div>
 
-    <hr>
-    <!-- section 2 -->
-
-    <section>
-        <div class="grid-container2">
-
-            <div class="item2">
-                <img src="../assetes/low.jpeg" alt="Real estate image">
-            </div>
-
-            <div class="item1">
-                <h3>⚖️ Antitrust Lawsuit Continues Against Major Real Estate Brokerages</h3>
-                <p>
-                    A U.S. District Judge has declined Howard Hanna Real Estate Services' request to recuse himself
-                from a high-profile antitrust lawsuit alleging collusion to inflate residential sales
-                commissions. The case is set to proceed in Missouri.
-                </p>
-               
-            </div>
-
-        </div>
-    </section>
-
-    <hr>
-
-
-    <section>
-        <div class="grid-container3">
-            <div class="item1">
-                <h3>🏢 Scentre Group Shares Steady Amid Real Estate Sector Rally</h3>
-                <p>
-                    While the Real Estate sector rose by 1.63%, Scentre Group's shares remained steady, closing
-                    below their 52-week high. Trading volume was also lower than the 30-day average.
-
-                </p>
-               
-            </div>
-            <div class="item2">
-                <img src="../assetes/save.jpg" alt="Real estate image">
-            </div>
-        </div>
-    </section>
-
-    <hr>
-
-    <!-- section 4 -->
-
-    <section>
-        <div class="grid-container4">
-
-            <div class="item2">
-                <img src="../assetes/4.jpg" alt="Real estate image">
-            </div>
-
-            <div class="item1">
-                <h3>🌴 Former Marvel CEO Lists Palm Beach Townhouse for $18.95M</h3>
-                <p>
-                    Isaac "Ike" Perlmutter has listed his 6,300-square-foot oceanfront townhouse in Palm Beach,
-                    Florida, for $18.95 million, nearly doubling its 2023 purchase price. The property boasts luxury
-                    amenities and proximity to Mar-a-Lago.
-
-                </p>
-              
-            </div>
-
-        </div>
-    </section>
-
-    <hr>
-
-    <!-- footer -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -184,7 +141,11 @@
             <p>&copy; 2025 Real Estate. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="../javascript/nav.js"></script>
+    <script src="../javascript/signup.js"></script>
+    
+
 
 </body>
 

@@ -50,7 +50,7 @@
             <li><a href="../../faq.html">FAQ</a></li>
             <li><a href="../../contact.html">Contacts</a></li>
             <li><a class="sign-in" href="../../signin.html">Sign In</a></li>
-            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+            <li><a class="sign-up" href="../../signup.html">Sign Up</a></li>
         </ul>
 
         <div class="hamburger" id="hamburger">
@@ -65,7 +65,42 @@
             <img src="../../../assetes/house rent.jpg" alt="">
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Type price/Location">
+            <input type="text" placeholder="Location (e.g., Kandy, Colombo)">
+
+            <select id="minPrice">
+                <option value="">Min Price</option>
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+                <option value="400">$400</option>
+                <option value="500">$500</option>
+            </select>
+
+            <select id="maxPrice">
+                <option value="">Max Price</option>
+                <option value="200">$200</option>
+                <option value="300">$300</option>
+                <option value="400">$400</option>
+                <option value="500">$500</option>
+                <option value="600">$600</option>
+            </select>
+
+            <select id="bedrooms">
+                <option value="">Bedrooms</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+            </select>
+
+            <select id="bathrooms">
+                <option value="">Bathrooms</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+            </select>
+
             <button type="submit">Search</button>
         </div>
 

@@ -54,7 +54,7 @@
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contacts</a></li>
             <li><a class="sign-in" href="signin.html">Sign In</a></li>
-            <li><a class="sign-up" href="#SignUp">Sign Up</a></li>
+            <li><a class="sign-up" href="signup.html">Sign Up</a></li>
         </ul>
 
         <div class="hamburger" id="hamburger">
@@ -103,22 +103,26 @@
 
     </div>
 
-    <div class="frme" id="SignUp">
+    <div class="frme" id="myForm">
 
         <div class="form-container">
             <h1>Drop us a Message</h1>
 
             <div class="name">
-                <input type="text" placeholder="First Name*" required>
-                <input type="text" placeholder="Second Name*" required>
+                <input type="text" placeholder="First Name*" id="fName">
+                <div class="error" id="firstError"></div>
+                <input type="text" placeholder="Second Name*" id="sName">
+                <div class="error" id="secondError"></div>
             </div>
 
             <div class="input-group">
-                <input type="email" placeholder="Enter your email*" required>
+                <input type="email" placeholder="Enter your email*" id="email">
+                <div class="error" id="emailError"></div>
             </div>
 
             <div class="input-group">
-                <input type="text" placeholder="+94xxxxxxxx" required>
+                <input type="text" placeholder="+94xxxxxxxx" id="phone">
+                <div class="error" id="numberError"></div>
             </div>
 
             <div class="input-group">
@@ -139,12 +143,14 @@
             </div>
 
             <div class="input-group">
-                <textarea placeholder="Your message?" required></textarea>
+                <textarea placeholder="Your message?"  id="msg"></textarea>
+                <div class="error" id="msgError"></div>
             </div>
 
             <div class="agree">
-                <input type="checkbox" required>
+                <input type="checkbox" id="agree">
                 <span>I agree to the terms & conditions</span>
+                <div class="error" id="agreeError"></div>
             </div>
 
             <div class="btn">
@@ -188,6 +194,7 @@
         </div>
     </footer>
     <script src="../javascript/nav.js"></script>
+    <script src="../javascript/contact.js"></script>
 </body>
 
 </html>
